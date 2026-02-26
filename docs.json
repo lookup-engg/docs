@@ -118,7 +118,10 @@
     "family": "Google Sans",
     "weight": 400,
     "source": "https://raw.githubusercontent.com/ronaks-haha/Fonts/main/google-sans-flex-canadian-aboriginal-400-normal.woff2",
-    "format": "woff2"
+    "format": "woff2",
+    "heading": {
+      "weight": 700
+    }
   },
   "appearance": {
     "strict": true,
