@@ -9,24 +9,10 @@
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "icon": "book-open-cover",
-          "href": "https://mintlify.com/docs"
-        },
-        {
-          "anchor": "Blog",
-          "icon": "newspaper",
-          "href": "https://mintlify.com/blog"
-        }
-      ]
-    },
-    "tabs": [
+    "groups": [
       {
-        "tab": "Guides",
-        "groups": [
+        "group": "Guides",
+        "pages": [
           {
             "group": "Getting started",
             "pages": [
@@ -38,7 +24,7 @@
         ]
       },
       {
-        "tab": "FAQs",
+        "group": "FAQs",
         "pages": [
           "untitled-page"
         ]
