@@ -1,11 +1,11 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Velo Documentation",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#0044FF",
+    "light": "#0044ff",
+    "dark": "#0044ff"
   },
   "favicon": "/favicon.svg",
   "navigation": {
@@ -84,8 +84,9 @@
     }
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/images/LInkedincompanylogo.jpg",
+    "dark": "/images/48px.png",
+    "href": "https://usevelo.ai"
   },
   "navbar": {
     "links": [
@@ -118,5 +119,14 @@
       "github": "https://github.com/mintlify",
       "linkedin": "https://linkedin.com/company/mintlify"
     }
+  },
+  "background": {
+    "color": {
+      "light": "#F5F5F5"
+    }
+  },
+  "fonts": {
+    "family": "Figtree",
+    "weight": 300
   }
 }
