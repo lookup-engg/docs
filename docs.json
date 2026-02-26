@@ -1,51 +1,84 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
+  "theme": "sequoia",
   "name": "Velo Documentation",
   "colors": {
     "primary": "#0044FF",
     "light": "#0044ff",
     "dark": "#0044ff"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/images/Frame1171276868.jpg",
   "navigation": {
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "icon": "book-open-cover",
-          "href": "https://mintlify.com/docs"
-        },
-        {
-          "anchor": "Blog",
-          "icon": "newspaper",
-          "href": "https://mintlify.com/blog"
-        }
-      ]
-    },
-    "dropdowns": [
-      {
-        "dropdown": "Home"
-      }
-    ],
     "groups": [
       {
-        "group": "Introduction",
+        "group": "Getting Started",
         "pages": [
-          {
-            "group": "Getting started",
-            "pages": [
-              "index",
-              "quickstart",
-              "development"
-            ]
-          }
+          "introduction",
+          "quickstart"
         ]
       },
       {
-        "group": "FAQs",
+        "group": "Home",
         "pages": [
-          "untitled-page"
+          "record-your",
+          "analytics"
+        ]
+      },
+      {
+        "group": "VeloTwin",
+        "pages": [
+          "untitled-page",
+          "velo-twin-creation"
+        ]
+      },
+      {
+        "group": "Assisted Recording",
+        "pages": [
+          "introduction-1",
+          "best-practices",
+          "error-states"
+        ]
+      },
+      {
+        "group": "Screen Recording",
+        "pages": [
+          {
+            "group": "Browser Extension",
+            "pages": [
+              "untitled-page",
+              "reinstallation"
+            ]
+          },
+          "configuration",
+          {
+            "group": "Script Editor",
+            "pages": [
+              "introduction-2",
+              "editing-your-script"
+            ]
+          },
+          "recording-options",
+          "g",
+          "sync-points"
+        ]
+      },
+      {
+        "group": "Editing Your Velo",
+        "pages": [
+          "video-settings",
+          "background-and-screen",
+          "cur",
+          "camera",
+          "audio-settings",
+          "zooms",
+          "masks"
+        ]
+      },
+      {
+        "group": "Pricing",
+        "pages": [
+          "how-pricing-works",
+          "script-regenration"
         ]
       }
     ]
@@ -93,7 +126,10 @@
     }
   },
   "fonts": {
-    "family": "Figtree",
-    "weight": 300
+    "family": "Inter",
+    "weight": 300,
+    "heading": {
+      "family": "Manrope"
+    }
   }
 }
