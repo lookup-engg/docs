@@ -27,7 +27,6 @@
       {
         "group": "VeloTwin",
         "pages": [
-          "untitled-page",
           "velo-twin-creation"
         ]
       },
@@ -45,7 +44,7 @@
           {
             "group": "Browser Extension",
             "pages": [
-              "untitled-page",
+              "installation",
               "reinstallation"
             ]
           },
@@ -126,8 +125,8 @@
     }
   },
   "fonts": {
-    "family": "Inter",
-    "weight": 300,
+    "family": "Geist",
+    "weight": 400,
     "heading": {
       "family": "Manrope"
     }
