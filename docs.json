@@ -87,8 +87,8 @@
     "links": [],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Go To Velo",
+      "href": "https://usevelo.ai"
     }
   },
   "contextual": {
