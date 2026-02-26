@@ -122,7 +122,7 @@
     }
   },
   "banner": {
-    "dismissible": true
+    "content": "Your banner message here"
   },
   "appearance": {
     "strict": true,
