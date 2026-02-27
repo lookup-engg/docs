@@ -1,6 +1,4 @@
-nav [class*="group"],
-nav [class*="Group"],
-aside [class*="group"],
-aside [class*="Group"] {
+#sidebar-title {
   font-weight: 700 !important;
   color: #6B7280 !important;
+}
