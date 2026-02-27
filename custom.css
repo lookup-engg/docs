@@ -1,5 +1,6 @@
-[class*="group"],
-[class*="Group"] {
+nav [class*="group"],
+nav [class*="Group"],
+aside [class*="group"],
+aside [class*="Group"] {
   font-weight: 700 !important;
-  color: #0044FF !important;
-}
+  color: #6B7280 !important;
