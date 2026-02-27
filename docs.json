@@ -8,6 +8,9 @@
     "dark": "#0044ff"
   },
   "favicon": "/images/Frame1171276868.jpg",
+  "custom": {
+  "css": "/custom.css"
+},
   "navigation": {
     "groups": [
       {

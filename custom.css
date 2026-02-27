@@ -1,0 +1,5 @@
+[class*="group"],
+[class*="Group"] {
+  font-weight: 700 !important;
+  color: #6B7280 !important;
+}
