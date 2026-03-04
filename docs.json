@@ -16,71 +16,57 @@
       {
         "group": "Getting Started",
         "pages": [
-          "introduction",
-          "quickstart"
-        ]
-      },
-      {
-        "group": "Home",
-        "pages": [
-          "record-your",
-          "analytics"
-        ]
-      },
-      {
-        "group": "VeloTwin",
-        "pages": [
-          "velo-twin-creation"
+          "getting-started/introduction",
+          "getting-started/quickstart"
         ]
       },
       {
         "group": "Assisted Recording",
         "pages": [
-          "introduction-1",
-          "best-practices",
-          "error-states"
+          "assisted-recording/steps-to-record",
+          "assisted-recording/recording-options",
+          "assisted-recording/best-practices",
+          "assisted-recording/common-issues"
         ]
       },
       {
-        "group": "Screen Recording",
+        "group": "Script Generation",
         "pages": [
-          {
-            "group": "Browser Extension",
-            "pages": [
-              "installation",
-              "reinstallation"
-            ]
-          },
-          "configuration",
-          {
-            "group": "Script Editor",
-            "pages": [
-              "introduction-2",
-              "editing-your-script"
-            ]
-          },
-          "recording-options",
-          "g",
-          "sync-points"
+          "script-generation/script-generation-steps",
+          "script-generation/editing-script",
+          "script-generation/script-syncing"
         ]
       },
       {
-        "group": "Editing Your Velo",
+        "group": "Creating VeloTwin",
         "pages": [
-          "video-settings",
-          "background-and-screen",
-          "cur",
-          "camera",
-          "audio-settings",
-          "zooms",
-          "masks"
+          "creating-velotwin/steps-to-create"
         ]
       },
       {
-        "group": "Pricing",
+        "group": "Editing Velo",
         "pages": [
-          "how-pricing-works",
-          "script-regenration"
+          "editing-velo/video-settings",
+          "editing-velo/background-and-screen",
+          "editing-velo/cursor",
+          "editing-velo/camera",
+          "editing-velo/audio-settings",
+          "editing-velo/zooms",
+          "editing-velo/masks"
+        ]
+      },
+      {
+        "group": "Sharing Video",
+        "pages": [
+          "sharing-video/share-via-link"
+        ]
+      },
+      {
+        "group": "Chrome Extension",
+        "pages": [
+          "chrome-extension/installation",
+          "chrome-extension/update-extension",
+          "chrome-extension/reinstall-extension"
         ]
       }
     ]
