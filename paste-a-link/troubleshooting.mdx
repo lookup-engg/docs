@@ -1,0 +1,61 @@
+---
+title: "Troubleshooting"
+description: "Fix common issues with the Paste a Link method."
+---
+
+## Microphone not working during narration
+
+**Symptom:** The session starts but Velo can't hear your microphone, or the transcript comes back blank.
+
+**Fix:** Check that your browser has microphone permission for Velo. In Chrome, click the lock icon in the address bar → Site settings → Microphone → Allow. Refresh and try again. Also make sure no other app is blocking the mic at the system level.
+
+---
+
+## The URL tab doesn't open
+
+**Symptom:** After clicking Continue on the Assisted Recording modal, no new tab opens with your URL.
+
+**Fix:** Check that the Velo Chrome Extension is installed and enabled. The extension is required to open the URL tab for recording. See [Chrome Extension Installation](/chrome-extension/installation). If the extension is installed, try refreshing the Velo page and starting again.
+
+---
+
+## Agent can't load the page (bot protection / Cloudflare)
+
+**Symptom:** In the Browser Agent live feed, the page shows a Cloudflare or "Performing security verification" screen. The agent keeps waiting but can't get through.
+
+**Fix:** The website you're trying to demo has bot-detection that's blocking the agent. This is common on sites like Product Hunt, some SaaS marketing pages, and other high-traffic sites. Unfortunately the agent cannot bypass these checks.
+
+**Alternatives:**
+- Use a staging URL or a different URL that doesn't have bot protection
+- Use **Capture Screen Recording** instead, where you record through your own authenticated browser session
+- Contact the Velo team if this is a recurring issue for your product
+
+---
+
+## Transcript is inaccurate or missing
+
+**Symptom:** After finishing the narration, the transcript is empty, garbled, or doesn't match what you said.
+
+**Fix:** This usually happens due to low microphone volume or background noise. Try narrating again in a quiet environment and speak clearly, closer to your microphone. Check your system mic settings to ensure the input volume is adequate.
+
+---
+
+## Script quality is poor
+
+**Symptom:** The generated script is repetitive, off-topic, or doesn't reflect the product well.
+
+**Fix:** Click **Regenerate Script** on the Script Review page. Before regenerating, update the **Additional Instructions** field in VeloTwin Setup with more specific guidance — describing your audience, tone, and what to focus on typically leads to much better results.
+
+---
+
+## Agent recording failed or got stuck
+
+**Symptom:** The Agent Activity log stops updating, or you get an error during the recording.
+
+**Fix:** Click **Cancel Session** and then click **Go make my Velo** to restart the agent from the Script Review page. If the agent repeatedly fails on the same URL, try a different URL or switch to **Capture Screen Recording**.
+
+---
+
+## Still stuck?
+
+Reach out via the chat bubble in the bottom right of the app, or email support@usevelo.ai.
