@@ -9,64 +9,126 @@
   },
   "favicon": "/images/Frame1171276868.jpg",
   "custom": {
-  "css": "/custom.css"
-},
+    "css": "/custom.css"
+  },
   "navigation": {
     "groups": [
       {
         "group": "Getting Started",
         "pages": [
           "getting-started/introduction",
-          "getting-started/quickstart"
+          "getting-started/quickstart",
+          "getting-started/capture-screen",
+          "getting-started/upload-recording",
+          "getting-started/upload-pdfs-pngs",
+          "getting-started/paste-a-link"
         ]
       },
       {
-        "group": "Assisted Recording",
+        "group": "Capture Screen Recording",
         "pages": [
-          "assisted-recording/steps-to-record",
-          "assisted-recording/recording-options",
-          "assisted-recording/best-practices",
-          "assisted-recording/common-issues"
+          "capture-screen/overview",
+          "capture-screen/setup",
+          "capture-screen/recording",
+          "capture-screen/select-voice",
+          "capture-screen/script-review",
+          "capture-screen/add-velotwin-face",
+          "capture-screen/troubleshooting"
         ]
       },
       {
-        "group": "Script Generation",
+        "group": "Upload a Recording",
         "pages": [
-          "script-generation/script-generation-steps",
-          "script-generation/editing-script",
-          "script-generation/script-syncing"
+          "upload-recording/overview",
+          "upload-recording/setup",
+          "upload-recording/uploading",
+          "upload-recording/select-voice",
+          "upload-recording/script-review",
+          "upload-recording/add-velotwin-face",
+          "upload-recording/troubleshooting"
+        ]
+      },
+      {
+        "group": "Upload PDFs & PNGs",
+        "pages": [
+          "upload-pdfs-pngs/overview",
+          "upload-pdfs-pngs/setup",
+          "upload-pdfs-pngs/uploading",
+          "upload-pdfs-pngs/narrating",
+          "upload-pdfs-pngs/select-voice",
+          "upload-pdfs-pngs/script-review",
+          "upload-pdfs-pngs/agent-recording",
+          "upload-pdfs-pngs/add-velotwin-face",
+          "upload-pdfs-pngs/troubleshooting"
+        ]
+      },
+      {
+        "group": "Paste a Link",
+        "pages": [
+          "paste-a-link/overview",
+          "paste-a-link/setup",
+          "paste-a-link/narrating",
+          "paste-a-link/select-voice",
+          "paste-a-link/script-review",
+          "paste-a-link/agent-recording",
+          "paste-a-link/add-velotwin-face",
+          "paste-a-link/troubleshooting"
         ]
       },
       {
         "group": "Creating VeloTwin",
         "pages": [
-          "creating-velotwin/steps-to-create"
+          "creating-velotwin/overview",
+          "creating-velotwin/steps-to-create",
+          "creating-velotwin/best-practices",
+          "creating-velotwin/common-issues"
         ]
       },
       {
         "group": "Editing Velo",
         "pages": [
-          "editing-velo/video-settings",
-          "editing-velo/background-and-screen",
+          "editing-velo/overview",
+          "editing-velo/background",
           "editing-velo/cursor",
-          "editing-velo/camera",
-          "editing-velo/audio-settings",
+          "editing-velo/velotwin",
+          "editing-velo/audio",
+          "editing-velo/scripts",
           "editing-velo/zooms",
-          "editing-velo/masks"
+          "editing-velo/masks",
+          "editing-velo/spotlight",
+          "editing-velo/callout",
+          "editing-velo/insert",
+          "editing-velo/cards",
+          "editing-velo/timeline",
+          "editing-velo/cut-and-crop"
         ]
       },
       {
-        "group": "Sharing Video",
+        "group": "Sharing Velo",
         "pages": [
-          "sharing-video/share-via-link"
+          "sharing-velo/share-via-link",
+          "sharing-velo/download"
         ]
       },
       {
         "group": "Chrome Extension",
         "pages": [
           "chrome-extension/installation",
-          "chrome-extension/update-extension",
-          "chrome-extension/reinstall-extension"
+          "chrome-extension/recording",
+          "chrome-extension/update",
+          "chrome-extension/reinstall"
+        ]
+      },
+      {
+        "group": "FAQ",
+        "pages": [
+          "faq/faq"
+        ]
+      },
+      {
+        "group": "Pricing",
+        "pages": [
+          "pricing/pricing"
         ]
       }
     ]
