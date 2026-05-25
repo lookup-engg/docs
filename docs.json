@@ -54,8 +54,7 @@
             "group": "Capture Screen & Upload a Recording",
             "pages": [
               "ai-script/flow-a/review-your-script",
-              "ai-script/flow-a/editing-your-script",
-              "ai-script/flow-a/script-syncing"
+              "ai-script/flow-a/editing-your-script"
             ]
           },
           {
