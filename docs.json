@@ -130,7 +130,7 @@
     "primary": {
       "type": "button",
       "label": "Go To Velo",
-      "href": "https://usevelo.ai"
+      "href": "https://app.usevelo.ai"
     }
   },
   "contextual": {
