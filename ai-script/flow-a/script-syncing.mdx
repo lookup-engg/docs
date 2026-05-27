@@ -1,28 +1,25 @@
----
-title: "Script Syncing"
-description: "Understand how Velo automatically aligns video segments with generated narration using sync points."
----
-
 Velo automates the alignment of video content with generated narration through a dynamic syncing engine. This process ensures that visual segments correspond precisely to the spoken script, maintaining a cohesive viewer experience across the entire timeline without manual frame-by-frame editing.
 
 ## Sync Points
 
-The foundation of the synchronization process is the use of sync points — markers identified within the script that act as anchors for the video. Each sync point defines a specific segment of text that must be paired with a corresponding visual sequence.
+The foundation of the synchronization process is the use of sync points, markers identified within the script that act as anchors for the video. Each sync point defines a specific segment of text that must be paired with a corresponding visual sequence.
 
 <Frame>
-  <img src="/images/ai-script/flow-a/script-syncing/scene-1.png" alt="Velo editor showing script with sync points and generate voice button" />
+  ![Velo editor showing script with sync points and generate voice button](/images/ai-script/flow-a/script-syncing/scene-1.png)
 </Frame>
+
 The editor displays the script with identified sync points alongside the Generate voice trigger.
 
 ## Dynamic Speed Modulation
 
-To achieve a perfect match between audio and video, the engine calculates the duration required for the narration based on the word count within a sync point and the characteristics of the voice being used. Because different voices have varying cadences, the system automatically adjusts video playback speed — making it faster or slower so it begins and ends exactly in coordination with the audio for each section.
+To achieve a perfect match between audio and video, the engine calculates the duration required for the narration based on the word count within a sync point and the characteristics of the voice being used. Because different voices have varying cadences, the system automatically adjusts video playback speed, making it faster or slower so it begins and ends exactly in coordination with the audio for each section.
 
 ## Automated Re-syncing
 
 Whenever **Generate voice** is initiated, Velo re-syncs the entire project. The platform re-analyzes the script and applies timing adjustments across the whole timeline, ensuring that even if the script or voice profile changes, the visual assets remain perfectly aligned with the narration.
 
 <Frame>
-  <img src="/images/ai-script/flow-a/script-syncing/scene-5.png" alt="Video preview synced with script" />
+  ![Video preview synced with script](/images/ai-script/flow-a/script-syncing/scene-5.png)
 </Frame>
+
 The video preview reflects timing adjustments made to match the script's sync points.
