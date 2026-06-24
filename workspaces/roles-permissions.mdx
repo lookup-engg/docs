@@ -1,0 +1,52 @@
+---
+title: Roles & Permissions
+description: Understand the difference between Owner, Admin, and Member roles in a workspace.
+---
+
+Every workspace member has one of three roles. Roles control what a person can access and manage within the workspace.
+
+## Role breakdown
+
+| Permission | Member | Admin | Owner |
+| --- | --- | --- | --- |
+| Create videos via AI chat | ✓ | ✓ | ✓ |
+| Publish videos to libraries | ✓ | ✓ | ✓ |
+| Share videos externally | ✓ | ✓ | ✓ |
+| Toggle CTA on own videos | ✓ | ✓ | ✓ |
+| View personal analytics | ✓ | ✓ | ✓ |
+| Use workspace VeloTwins | ✓ | ✓ | ✓ |
+| Invite and remove members | | ✓ | ✓ |
+| Create libraries | | ✓ | ✓ |
+| Manage private library membership | | ✓ | ✓ |
+| Configure brand kit | | ✓ | ✓ |
+| Configure workspace CTA button | | ✓ | ✓ |
+| View workspace analytics | | ✓ | ✓ |
+| Manage billing and credits | | | ✓ |
+| Configure SSO / SAML | | | ✓ |
+| Delete workspace | | | ✓ |
+
+### Member
+
+Members can create videos, publish to libraries, and share externally. They draw from the workspace's shared minute pool. Members cannot invite or remove people, create libraries, or access billing or workspace-level settings.
+
+### Admin
+
+Admins have everything a Member has, plus the ability to invite members, change roles, create and manage libraries, configure the brand kit and CTA button, and view workspace-level analytics. Admins cannot manage billing or delete the workspace.
+
+### Owner
+
+The Owner has full control over the workspace — including plans, billing, SSO configuration, and the ability to delete the workspace. The person who creates the workspace is automatically the Owner. There is exactly one Owner per workspace.
+
+## Changing roles
+
+Owners and Admins can change a member's role from **Settings → Members** by clicking the role badge next to their name. Admins can change roles up to (but not exceeding) their own role level.
+
+Role changes take effect immediately.
+
+## Chat privacy
+
+Every chat thread is strictly private to the person who created it. No teammate — regardless of role — can view or continue another member's chat. Admins can only see videos that have been explicitly published to a library.
+
+<Note>
+  Ownership can be transferred by the current Owner. Each workspace must have exactly one Owner at all times.
+</Note>
