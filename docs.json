@@ -7,7 +7,7 @@
     "light": "#0044ff",
     "dark": "#0044ff"
   },
-  "favicon": "/images/Frame1171276868.jpg",
+  "favicon": "/images/Logom.png",
   "custom": {
     "css": "/custom.css"
   },
@@ -143,7 +143,7 @@
       }
     ]
   },
-  "logo": "/images/Frame17.svg",
+  "logo": "/images/logo-name.png",
   "navbar": {
     "links": [],
     "primary": {
