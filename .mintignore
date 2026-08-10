@@ -5,3 +5,66 @@
 # Draft content
 drafts/
 *.draft.mdx
+
+# Authoring tooling (not documentation)
+/scripts/
+
+# ---------------------------------------------------------------------------
+# ARCHIVED PAGES
+#
+# These pages are superseded by the current navigation in docs.json but are
+# retained in git for reference. They are excluded from the build so they are
+# neither served nor indexed. docs.json redirects their URLs to the current
+# equivalents.
+#
+# Do not edit or link to anything below this line. If you need content from
+# one of these pages, move it into the live page and leave the original here.
+# ---------------------------------------------------------------------------
+
+# Legacy creation-flow trees, superseded by /creating-a-velo/
+/capture-screen/
+/upload-recording/
+/upload-pdfs-pngs/
+/paste-a-link/
+
+# Superseded by /velotwin/
+/creating-velotwin/
+
+# Superseded by /ai-script/
+/script-generation/
+
+# Superseded by /creating-a-velo/sharing
+/sharing-velo/
+/sharing-video/
+
+# Duplicated copy of the site nested under /workspaces/
+/workspaces/creating-a-velo/
+/workspaces/faq/
+/workspaces/getting-started/
+/workspaces/pricing/
+/workspaces/settings/
+
+# Individual superseded pages in otherwise-live directories
+/ai-script/flow-a/script-syncing.mdx
+/assisted-recording/recording-options.mdx
+/assisted-recording/steps-to-record.mdx
+/chrome-extension/reinstall-extension.mdx
+/chrome-extension/update-extension.mdx
+/editing-velo/audio-settings.mdx
+/editing-velo/background-and-screen.mdx
+/editing-velo/camera.mdx
+/editing-velo/video-settings.mdx
+/getting-started/capture-screen.mdx
+/getting-started/paste-a-link.mdx
+/getting-started/upload-pdfs-pngs.mdx
+/getting-started/upload-recording.mdx
+
+# Not published yet — kept in the repo, excluded from the build
+/ai-script/how-the-ai-works.mdx
+
+# Superseded by /creating-a-velo/script-review — these describe the pre-chat script UI
+/ai-script/flow-a/review-your-script.mdx
+/ai-script/flow-a/editing-your-script.mdx
+/ai-script/flow-b/scene-card.mdx
+/ai-script/flow-b/review.mdx
+/ai-script/flow-b/editing.mdx

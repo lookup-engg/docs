@@ -1,77 +1,41 @@
 ---
 title: "Spotlight"
-description: ""
+description: "Dim the screen around the area you want viewers to focus on."
 ---
 
-### **1. What Is the Spotlight Effect?**
+Spotlight dims everything around a region of the screen, pulling attention to one part of the recording without cutting away from the rest. Use it to point at a button, a field, or a section while the rest of the interface stays visible.
 
-The Spotlight effect dims the area around a selected region of your
-screen, drawing the viewer's attention to a specific part of the
-recording. It is useful for focusing viewers on a particular UI element,
-button, or section without cutting away from the rest of the screen.
+Unlike [Callout](/editing-velo/callout), Spotlight does not zoom — it only dims.
 
-![Description](/images/editing-velo/spotlight/1.png)
+## Adding a spotlight
 
-### **2. Adding a Spotlight to Your Velo**
+**Step 1:** Open the **Insert** panel from the right sidebar.
 
-To add a Spotlight:
+**Step 2:** Under **Effects**, select **Spotlight**.
 
-- Open the **Insert** panel from the right sidebar.
+<Frame>
+  <img src="/images/editing-velo/spotlight/01.png" alt="Insert panel with Callout and Spotlight under Effects" />
+</Frame>
 
-- Under the **Effects** section, click **Spotlight**.
+**Step 3:** A **Spotlight Region** appears on the canvas and a block is added to the **Spotlight** track on the timeline. Drag the region over the area you want to highlight, and drag its handles to resize.
 
-- A spotlight region will appear on the canvas and a corresponding
-  block will be added to the **Spotlight** track in the timeline.
+## Spotlight settings
 
-- Drag the spotlight region on the canvas to position it over the area
-  you want to highlight.
+Selecting the region opens **Spotlight Settings** in the right-hand panel.
 
-![Description](/images/editing-velo/spotlight/2.png)
+<Frame>
+  <img src="/images/editing-velo/spotlight/02.png" alt="Spotlight Settings with background opacity, colour, border radius, and duration" />
+</Frame>
 
-### **3. Adjusting the Dimmed Background Opacity**
+| Control | What it does |
+| --- | --- |
+| **Background Opacity** | How dark the surrounding area becomes. Higher makes the spotlight stand out more |
+| **Background Color** | The colour of the dimmed area. Defaults to `#000000` |
+| **Border Radius** | Rounds the corners of the spotlight region, from a sharp rectangle to a pill |
+| **Duration** | How long the effect stays active |
 
-The **Background Opacity** slider controls how dark the surrounding
-area becomes when the spotlight is active.
+Each control has its own **Reset** button. **Close Spotlight editor** returns to the Screen panel.
 
-- Slide right to darken the background more, making the highlighted
-  area stand out more strongly.
+## Timing
 
-- Slide left for a subtler dimming effect.
-
-![Description](/images/editing-velo/spotlight/3.png)
-
-### **4. Changing the Spotlight Background Color**
-
-The **Background Color** picker allows you to change the color of the
-dimmed area surrounding the spotlight region.
-
-- Click the color swatch to open the color picker and choose your
-  preferred tint.
-
-- The default is black, which creates a classic darkened focus effect.
-
-![Description](/images/editing-velo/spotlight/4.png)
-
-### **5. Rounding the Spotlight Corners**
-
-Use the **Border Radius** slider to adjust how rounded the corners of
-the spotlight region appear.
-
-- Slide right for a pill or oval shape.
-
-- Slide left to keep the spotlight region as a sharp rectangle.
-
-![Description](/images/editing-velo/spotlight/5.png)
-
-### **6. Setting the Spotlight Duration**
-
-The **Duration** field controls how long the spotlight effect remains
-active in your video.
-
-- Adjust the value to match the segment of your demo you want to
-  highlight.
-
-- You can also drag the edges of the Spotlight block directly in the
-  timeline to resize it.
-
-![Description](/images/editing-velo/spotlight/6.png)
+The block on the **Spotlight** track shows the current opacity — for example, `Spotlight 70%`. Drag its edges to change when the effect starts and ends, or use the **Duration** slider.

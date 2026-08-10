@@ -1,18 +1,33 @@
 ---
 title: "Masks"
-description: ""
+description: "Blur parts of the screen that shouldn't be shared."
 ---
 
-### **1. Sensitive Content Visibility in Velo Generation**
+Masks blur a region of the recording, so passwords, personal email addresses, customer names, or private dashboard figures never reach your viewers.
 
-You can hide sensitive information using the **Masks** feature. This
-tool allows you to cover or blur specific areas of your screen such as
-passwords, personal emails, or private dashboard data ensuring that your
-viewers only see the information you want to share.
+## Adding a mask
 
-### **2. Applying Multiple Masks to a Single Video**
+Open the **Insert** panel from the right sidebar and add a mask. A **Mask Region** appears on the canvas and a block is added to the **Masking** track. Drag the region over what you want hidden and resize it with the handles.
 
-The Velo timeline includes a dedicated **Masks** track where you can
-manage multiple entries. Similar to how you can have multiple **Zoom**
-blocks at different points in your video, you can add multiple mask
-segments to cover different sensitive areas throughout your walkthrough.
+## Mask settings
+
+Selecting a mask opens the **Mask Editor** in the right-hand panel.
+
+<Frame>
+  <img src="/images/editing-velo/masks/01.png" alt="Mask Editor with blur and roundness, and two mask blocks on the timeline" />
+</Frame>
+
+| Control | What it does |
+| --- | --- |
+| **Blur** | How heavily the region is blurred. Higher values make the content less legible |
+| **Roundness** | Rounds the corners of the mask region |
+
+**Apply to all masks** pushes the current blur and roundness to every mask in the video at once, so a whole video can be made consistent in one step.
+
+<Note>
+  Masks blur what is underneath — they do not paint over it with a solid block. Set **Blur** high enough that the content is genuinely unreadable, and check the result at full screen before sharing.
+</Note>
+
+## Using several masks
+
+A video can carry as many masks as you need, each covering a different area at a different point in the video. They appear as separate blocks on the **Masking** track — in the screenshot above there are two, each at 40% blur — and you can drag their edges to control when each one is active.
