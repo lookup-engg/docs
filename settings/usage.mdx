@@ -1,6 +1,6 @@
 ---
-title: "Usage"
-description: "Track minute consumption across your account and workspace."
+title: Usage
+description: Track minute consumption across your account and workspace.
 ---
 
 Velo provides two usage views — one for your personal activity across all workspaces, and one for the workspace as a whole.
@@ -10,11 +10,10 @@ Velo provides two usage views — one for your personal activity across all work
 Navigate to **Settings → My Usage** to see your personal minute consumption.
 
 <Frame>
-  ![Personal usage view](/images/settings/my-usage.jpg)
+  <img src="/images/settings/usage/03.png" alt="Personal usage view" />
 </Frame>
 
 Filter by time period:
-
 - **This Cycle** — current billing period
 - **Past 30 Days**
 - **All Time**
@@ -26,7 +25,7 @@ You can also filter by workspace using the **All workspaces** dropdown.
 Navigate to **Settings → Usage** to see the workspace's shared pool and a breakdown of usage across all members.
 
 <Frame>
-  ![Workspace usage dashboard](/images/settings/usage.jpg)
+  <img src="/images/settings/usage/01.png" alt="Workspace usage dashboard showing minutes and Reach credits" />
 </Frame>
 
 The dashboard shows:
@@ -34,15 +33,15 @@ The dashboard shows:
 | Metric | Description |
 | --- | --- |
 | **Minutes Remaining** | How many shared minutes are left in the current cycle |
-| **Reserved** | Minutes currently being used by active video chats |
+| **Reserved** | Minutes currently being used by active video renders |
 | **Used This Cycle** | Total minutes consumed since the last reset |
 | **Resets in** | Days until the minute pool resets |
 
 Below the summary, the **Minutes Usage Breakdown** chart gives a visual overview of remaining, reserved, and used minutes. A **Top-up Minutes** button is available on the Free plan if you need more.
 
-### Credits used
+### Usage entries
 
-The table at the bottom shows individual usage entries. Filter by time period (**This Cycle**, **Past 30 Days**, **All Time**) or by member using the **All members** dropdown to see who on your team is consuming minutes.
+The table below the chart shows individual usage entries. Filter by time period (**This Cycle**, **Past 30 Days**, **All Time**) or by member using the **All members** dropdown to see who on your team is consuming minutes.
 
 ## What happens when you run out
 
@@ -51,3 +50,28 @@ When a workspace exhausts its minute pool, video creation is blocked for all mem
 - [Top up minutes](/settings/plans-billing) (Free plan only)
 - [Upgrade your plan](/settings/plans-billing) for a higher monthly allowance
 - Wait for the cycle to reset
+
+### Avatar time and voice clones
+
+Below the minutes breakdown, the same page shows **Avatar Time** remaining and the number of **Voice Clones** in use, broken down by member.
+
+## Prompt to Video credits
+
+Prompt to Video is metered separately, from its own credit pool. Further down the Usage page, a **Reach Usage** panel shows:
+
+| Metric | Description |
+| --- | --- |
+| **Credits Remaining** | Credits left in the current cycle, out of your plan's monthly total |
+| **Used This Cycle** | Credits consumed since the last reset |
+
+A **Top-up Reach Credits** button sits alongside it.
+
+<Frame>
+  <img src="/images/settings/usage/02.png" alt="Usage entries showing both Velo minutes and Reach credits" />
+</Frame>
+
+The **Credits used** table at the bottom of the page lists both kinds of entry together — Velo minutes consumed by recordings, and Reach credits consumed by Prompt to Video — each showing the member, the date, the amount deducted, and the balance remaining.
+
+<Note>
+  The app labels this pool **Reach credits**. It is the same pool described in [Billing & credits](/prompt-to-video/billing-credits).
+</Note>

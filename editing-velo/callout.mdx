@@ -1,85 +1,40 @@
 ---
 title: "Callout"
-description: ""
+description: "Draw a highlighted box around part of the screen, with a zoom to match."
 ---
 
-### **1. What Is the Callout Effect?**
+Callout draws a highlighted box around a region of the screen so viewers see exactly where to look. Unlike [Spotlight](/editing-velo/spotlight), which only dims the surroundings, Callout also zooms toward the region.
 
-The Callout effect draws a highlighted box around a specific area of
-your screen, making it easy for viewers to see exactly where to look.
-Unlike Spotlight, Callout adds a visible zoom effect to help viewers focus on the specific section.
+## Adding a callout
 
-![Description](/images/editing-velo/callout/1.png)
+**Step 1:** Open the **Insert** panel from the right sidebar.
 
-### **2. Adding a Callout to Your Velo**
+**Step 2:** Under **Effects**, select **Callout**.
 
-To add a Callout:
+<Frame>
+  <img src="/images/editing-velo/callout/01.png" alt="Insert panel with Callout and Spotlight under Effects" />
+</Frame>
 
-- Open the **Insert** panel from the right sidebar.
+**Step 3:** A **Callout Region** appears on the canvas and a block is added to the **Callout** track. Drag and resize it to frame what you want to highlight.
 
-- Under the **Effects** section, click **Callout**.
+## Callout settings
 
-- A draggable callout region will appear on the canvas and a
-  corresponding block will be added to the **Callout** track in the
-  timeline.
+Selecting the region opens **Callout Settings** in the right-hand panel.
 
-- Drag and resize the region on the canvas to frame the area you want
-  to highlight.
+<Frame>
+  <img src="/images/editing-velo/callout/02.png" alt="Callout Settings with scale, background opacity, colour, border radius, and duration" />
+</Frame>
 
-![Description](/images/editing-velo/callout/2.png)
+| Control | What it does |
+| --- | --- |
+| **Scale** | How far the callout zooms in. This is separate from dragging the region — it sets the zoom, not the frame |
+| **Background Opacity** | How solid the fill inside the region is. Lower values leave only the border visible |
+| **Background Color** | The fill colour. Defaults to `#000000` |
+| **Border Radius** | Rounds the corners of the region |
+| **Duration** | How long the callout stays visible |
 
-### **3. Adjusting the Callout Scale**
+Each control has its own **Reset** button. **Close Callout editor** returns to the Screen panel.
 
-The **Scale** slider controls the overall size of the callout region
-relative to the canvas.
+## Timing
 
-- Slide right to increase the scale of the callout.
-
-- Slide left to shrink it.
-
-This is distinct from dragging the region on the canvas - Scale adjusts
-the proportional size of the callout box itself.
-
-![Description](/images/editing-velo/callout/3.png)
-
-### **4. Adjusting Background Opacity**
-
-The **Background Opacity** slider controls how visible the fill color
-inside the callout region appears.
-
-- A higher value creates a more solid filled box.
-
-- A lower value makes the fill transparent, showing only the border.
-
-![Description](/images/editing-velo/callout/4.png)
-
-### **5. Changing the Callout Background Color**
-
-The **Background Color** picker lets you choose the fill color of the
-callout box.
-
-- Click the color swatch to open the picker and select your preferred
-  highlight color.
-
-![Description](/images/editing-velo/callout/5.png)
-
-### **6. Rounding the Callout Corners**
-
-Use the **Border Radius** slider to round the corners of your callout
-region.
-
-- Slide right for a softer, rounded look.
-
-- Slide left to keep sharp rectangular corners.
-
-![Description](/images/editing-velo/callout/6.png)
-
-### **7. Setting the Callout Duration**
-
-The **Duration** field controls how long the callout remains visible in
-your video.
-
-- Enter a specific value or drag the edges of the Callout block
-  directly in the timeline to adjust its length.
-
-![Description](/images/editing-velo/callout/7.png)
+The block on the **Callout** track shows the current scale — for example, `Callout 1.3x`. Drag its edges to adjust when it appears, or use the **Duration** slider.

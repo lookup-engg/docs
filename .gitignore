@@ -1,0 +1,18 @@
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Node / tooling
+node_modules/
+.mint/
+
+# Python (docs tooling in scripts/)
+__pycache__/
+*.pyc
+.venv/
+
+# Scratch from the docs audit — not part of the site
+_audit/
+_to_delete/
+_incoming_audit_list.txt
+_tmp_*

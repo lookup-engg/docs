@@ -1,0 +1,37 @@
+---
+title: "MCP servers"
+description: "Connect your own MCP server as a knowledge source for Prompt to Video."
+---
+
+If your team runs internal tools or holds data that isn't covered by a standard application integration, you can connect your own MCP (Model Context Protocol) server as a knowledge source.
+
+<Frame>
+  <img src="/images/prompt-to-video/connectors/03.png" alt="MCP servers tab with no servers connected" />
+</Frame>
+
+## Adding an MCP server
+
+**Step 1:** Go to **Connectors → MCP servers** and select **Add server**.
+
+**Step 2:** Fill in the **Add MCP server** dialog:
+
+| Field | Description |
+| --- | --- |
+| **Name** | How the server appears in your connector list |
+| **Server URL** | The MCP endpoint Velo connects to |
+| **Transport** | **HTTP** or **SSE**, depending on what your server supports |
+| **Authentication** | How Velo authenticates against the server |
+
+<Frame>
+  <img src="/images/prompt-to-video/connectors/04.png" alt="Add MCP server dialog showing Name, Server URL, Transport, and Authentication" />
+</Frame>
+
+**Step 3:** Select **Continue**, then **Connect** to sign in.
+
+With **OAuth (sign in)** selected, Velo discovers the OAuth endpoints and registers a client automatically. If your server does not support automatic registration, expand **Manual OAuth client** and paste a client ID.
+
+**Step 4:** Once connected, the server becomes a knowledge source you can attach to a Prompt to Video session, the same way as a knowledge base or an application.
+
+## When to use this
+
+Use an MCP server connector when the information you need lives in an internal system without a native Velo integration — for example, an internal wiki, a custom database, or a proprietary tool. For common SaaS tools, check [Applications](/prompt-to-video/connectors/applications) first, since most are already supported.

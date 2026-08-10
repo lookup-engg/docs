@@ -1,4 +1,201 @@
+/* ---------------------------------------------------------------------------
+   Velo docs — brand typography and overrides.
+   Colour tokens live in docs.json. Fonts are self-hosted from /fonts/.
+   --------------------------------------------------------------------------- */
+
+/* Garant Pro — headings.
+   The supplied files report weight 500 (regular) and 800 (bold) internally,
+   but are declared here as 400/700 so normal CSS weights map to them. */
+@font-face {
+  font-family: "Garant Pro";
+  src: url("/fonts/garantproregular.woff2") format("woff2");
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Garant Pro";
+  src: url("/fonts/garantproitalic.woff2") format("woff2");
+  font-weight: 400; font-style: italic; font-display: swap;
+}
+@font-face {
+  font-family: "Garant Pro";
+  src: url("/fonts/garantprobold.woff2") format("woff2");
+  font-weight: 700; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Garant Pro";
+  src: url("/fonts/garantprobolditalic.woff2") format("woff2");
+  font-weight: 700; font-style: italic; font-display: swap;
+}
+
+/* Google Sans — body. Split latin / latin-ext so the browser fetches
+   only the subset a page actually needs. */
+@font-face {
+  font-family: "Google Sans";
+  src: url("/fonts/googlesanslatin.woff2") format("woff2");
+  font-weight: 400; font-style: normal; font-display: swap;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Google Sans";
+  src: url("/fonts/googlesanslatinext.woff2") format("woff2");
+  font-weight: 400; font-style: normal; font-display: swap;
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF,
+    U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020,
+    U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "Google Sans";
+  src: url("/fonts/googlesansitaliclatin.woff2") format("woff2");
+  font-weight: 400; font-style: italic; font-display: swap;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Google Sans";
+  src: url("/fonts/googlesansitaliclatinext.woff2") format("woff2");
+  font-weight: 400; font-style: italic; font-display: swap;
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF,
+    U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020,
+    U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* Apply. docs.json also declares these; this makes the mapping explicit. */
+body, .prose, main {
+  font-family: "Google Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+h1, h2, h3, h4, h5, h6,
+.prose h1, .prose h2, .prose h3, .prose h4 {
+  font-family: "Garant Pro", "Google Sans", -apple-system, sans-serif;
+  font-weight: 700;
+}
+
 #sidebar-title {
   font-weight: 700 !important;
-  color: #666666 !important;
+  color: #3C4043 !important;
+}
+
+/* ---------------------------------------------------------------------------
+   Space Grotesk — the brand's accent face. Used for code and eyebrow labels,
+   not body or headings. Served from Google Fonts (it is open-licensed).
+   --------------------------------------------------------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap");
+
+code, kbd, pre, .font-mono,
+[class*="eyebrow"], .prose code {
+  font-family: "Space Grotesk", ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+/* ---------------------------------------------------------------------------
+   Structural grid.
+   The brand deck sets everything on a white field with thin rules — "Grids:
+   calm control over complexity". This reproduces that instead of the flat
+   grey wash the docs shipped with.
+   --------------------------------------------------------------------------- */
+body {
+  background-color: #FFFFFF;
+  background-image:
+    linear-gradient(to right,  rgba(72, 127, 233, 0.045) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(72, 127, 233, 0.045) 1px, transparent 1px);
+  background-size: 64px 64px;
+  background-attachment: fixed;
+}
+
+/* Only the page column gets a solid fill — scoping this to `main` alone would
+   also repaint Note/Warning/Card internals and break their tinted backgrounds. */
+main > div > .prose {
+  background-color: transparent;
+}
+
+/* ---------------------------------------------------------------------------
+   Geometry — aligned to usevelo.ai.
+
+   Measured off the live marketing site: buttons and nav controls have
+   border-radius 0, containers use 4px and occasionally 8px, structural rules
+   are 1px #CFD5E5, and display headings are Garant Pro 400 with -0.02em
+   tracking. Mintlify's stock theme is far rounder than that, so this section
+   squares the docs back up.
+   --------------------------------------------------------------------------- */
+
+:root {
+  --velo-rule: #CFD5E5;      /* the site's structural hairline */
+  --velo-rule-soft: #E6E6E6; /* its lighter companion */
+  --velo-radius: 4px;        /* the only radius the site uses at any scale */
+}
+
+/* Containers: cap the radius rather than remove it. Anything Mintlify draws
+   at 8px, 12px, 16px or a full pill collapses to the brand's 4px. */
+main [class*="rounded"],
+aside [class*="rounded"],
+nav [class*="rounded"],
+header [class*="rounded"],
+.prose [class*="rounded"],
+pre, code, table, img, video, iframe {
+  border-radius: var(--velo-radius) !important;
+}
+
+/* Controls are square on the site — buttons, tabs, chips, inputs, the search
+   field. These sit on top of the container rule above. */
+button,
+[role="tab"],
+[role="button"],
+input, select, textarea,
+a[class*="bg-primary"],
+[class*="rounded-full"]:not(img):not([class*="avatar"]) {
+  border-radius: 0 !important;
+}
+
+/* Genuine circles stay circular: avatars and status dots read wrong as squares. */
+img[class*="rounded-full"],
+[class*="avatar"],
+[class*="Avatar"] {
+  border-radius: 9999px !important;
+}
+
+/* Structural hairlines. The site frames content with one weight of rule in one
+   colour; Mintlify ships several greys. */
+main [class*="border"],
+aside [class*="border"],
+.prose [class*="border"],
+hr, table, th, td {
+  border-color: var(--velo-rule) !important;
+}
+hr {
+  border-top-width: 1px;
+  border-bottom: 0;
+}
+
+/* Display headings: Garant Pro at 400 with the site's tracking. Sub-heads stay
+   bold so hierarchy survives at documentation sizes. */
+h1, h2,
+.prose h1, .prose h2 {
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 1.33;
+}
+h3, h4, h5, h6,
+.prose h3, .prose h4 {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+/* Primary actions match the site's flat blue block. */
+[class*="bg-primary"],
+button[class*="primary"] {
+  background-color: #487FE9 !important;
+  color: #FFFFFF !important;
+}
+
+/* Code blocks: square-ish, hairline framed, no drop shadow. */
+pre {
+  border: 1px solid var(--velo-rule);
+  box-shadow: none !important;
+}
+
+/* Frames and images sit inside a hairline, the way figures do on the site. */
+.prose img,
+[class*="frame"] img {
+  border: 1px solid var(--velo-rule-soft);
 }

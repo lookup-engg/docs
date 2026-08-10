@@ -1,125 +1,113 @@
-# Velo Docs - Structure & Content Checklist
+# Docs structure
 
-Use this file to track writing progress. Check off each page as content is written and reviewed.
+Generated from `docs.json`. This is the live navigation — if it disagrees
+with the site, `docs.json` wins.
 
----
+Pages listed in `.mintignore` are excluded from the build and are not in this tree.
 
 ## Getting Started
 
-- Introduction
-- Quickstart
-- Capture Screen _(brief overview with screenshots)_
-- Upload a Recording _(brief overview with screenshots)_
-- Upload PDFs & PNGs _(brief overview with screenshots)_
-- Paste a Link _(brief overview with screenshots)_
+- `getting-started/introduction.mdx`
+- `getting-started/the-chat-home.mdx`
+- `getting-started/quickstart.mdx`
 
----
+## Creating a Velo
 
-## Capture Screen Recording
+- `creating-a-velo/overview.mdx`
+- **Screen recording**
+  - `creating-a-velo/capture-screen.mdx`
+  - `ai-script/flow-a/review-your-script.mdx`
+  - `ai-script/flow-a/editing-your-script.mdx`
+- **Upload a video or PDF**
+  - `creating-a-velo/upload-recording.mdx`
+  - `creating-a-velo/write-a-prompt.mdx`
+  - `creating-a-velo/record-my-intent.mdx`
+  - `ai-script/flow-b/scene-card.mdx`
+  - `ai-script/flow-b/review.mdx`
+  - `ai-script/flow-b/editing.mdx`
+- **Paste a link**
+  - `creating-a-velo/paste-a-link.mdx`
+  - `assisted-recording/how-it-works.mdx`
+  - `assisted-recording/best-practices.mdx`
+  - `assisted-recording/common-issues.mdx`
+- **Write a prompt**
+  - `prompt-to-video/overview.mdx`
+  - `prompt-to-video/prompt-to-video-vs-velo.mdx`
+  - `prompt-to-video/creating-a-video.mdx`
+  - `prompt-to-video/editing.mdx`
+- `creating-a-velo/quick-actions.mdx`
 
-- Overview
-- Setup
-- Recording
-- Select Voice _(preview recording \+ pick VeloTwin voice)_
-- Script Review _(in editor: review, edit manually, AI rewrite)_
-- Add VeloTwin Face _(in editor: add face/avatar)_
-- Troubleshooting
+## Connectors
 
----
-
-## Upload a Recording
-
-- Overview
-- Setup
-- Uploading
-- Select Voice _(preview recording \+ pick VeloTwin voice)_
-- Script Review _(in editor: review, edit manually, AI rewrite)_
-- Add VeloTwin Face _(in editor: add face/avatar)_
-- Troubleshooting
-
----
-
-## Upload PDFs & PNGs
-
-- Overview
-- Setup
-- Uploading
-- Narrating _(assisted recording over canvas)_
-- Select Voice _(pick VeloTwin voice \+ set instructions)_
-- Script Review _(review and edit generated script)_
-- Agent Recording _(browser agent runs and records)_
-- Add VeloTwin Face _(in editor: add face/avatar)_
-- Troubleshooting
-
----
-
-## Paste a Link
-
-- Overview
-- Setup
-- Narrating _(assisted recording while navigating product)_
-- Select Voice _(pick VeloTwin voice \+ set instructions)_
-- Script Review _(review and edit generated script)_
-- Agent Recording _(browser agent runs and records)_
-- Add VeloTwin Face _(in editor: add face/avatar)_
-- Troubleshooting
-
----
-
-## Creating VeloTwin
-
-- Overview
-- Steps to Create
-- Best Practices
-- Common Issues
-
----
+- `prompt-to-video/connectors/overview.mdx`
+- `prompt-to-video/connectors/knowledge-bases.mdx`
+- `prompt-to-video/connectors/mcp-servers.mdx`
+- `prompt-to-video/connectors/applications.mdx`
 
 ## Editing Velo
 
-- Overview
-- Background
-- Cursor
-- VeloTwin _(face/avatar settings in editor)_
-- Audio
-- Scripts
-- Zooms
-- Masks
-- Spotlight
-- Callout
-- Insert _(text, image, rectangle, arrow)_
-- Cards _(intro & outro)_
-- Timeline
-- Cut & Crop
+- `editing-velo/overview.mdx`
+- `editing-velo/output-format.mdx`
+- `editing-velo/background.mdx`
+- `editing-velo/cursor.mdx`
+- `editing-velo/velotwin.mdx`
+- `editing-velo/audio.mdx`
+- `editing-velo/scripts.mdx`
+- `editing-velo/zooms.mdx`
+- `editing-velo/masks.mdx`
+- `editing-velo/spotlight.mdx`
+- `editing-velo/callout.mdx`
+- `editing-velo/insert.mdx`
+- `editing-velo/cards.mdx`
+- `editing-velo/timeline.mdx`
+- `editing-velo/cut-and-crop.mdx`
+- `editing-velo/translations.mdx`
 
----
+## Share & analyse
 
-## Sharing Velo
+- `creating-a-velo/sharing.mdx`
+- `creating-a-velo/video-analytics.mdx`
+- `docs/generating-a-doc.mdx`
+- `docs/editing-and-sharing.mdx`
 
-- Share via Link
-- Download _(includes watermark info)_
+## VeloTwin
 
----
+- `velotwin/voice-clone.mdx`
+- `velotwin/face-clone.mdx`
+- `velotwin/public-avatars.mdx`
+
+## Workspaces
+
+- `workspaces/overview.mdx`
+- `workspaces/create-workspace.mdx`
+- `workspaces/invite-members.mdx`
+- `workspaces/roles-permissions.mdx`
+- `workspaces/libraries.mdx`
+- `workspaces/brand-kit.mdx`
+
+## Plans & billing
+
+- `pricing/pricing.mdx`
+- `settings/plans-billing.mdx`
+- `settings/usage.mdx`
+- `prompt-to-video/billing-credits.mdx`
+
+## Account
+
+- `settings/profile.mdx`
+- `settings/security.mdx`
 
 ## Chrome Extension
 
-- Installation
-- Recording _(recording from extension without web app open)_
-- Update
-- Reinstall
-
----
+- `chrome-extension/installation.mdx`
+- `chrome-extension/recording.mdx`
+- `chrome-extension/update.mdx`
+- `chrome-extension/reinstall.mdx`
 
 ## FAQ
 
-- FAQ
+- `faq/faq.mdx`
 
 ---
 
-## Pricing
-
-- Pricing
-
----
-
-**Total pages: 61**
+**66 pages** across 11 groups.

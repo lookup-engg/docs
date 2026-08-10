@@ -1,3 +1,9 @@
+> **HISTORICAL — do not follow.** This was a migration plan that was only
+> partly executed; several paths in it (`editing/`, `account-billing/`,
+> `creating-a-velo/upload-pdf.mdx`) do not exist. It also predates Analytics,
+> Multilingual output, and Prompt to Video. See `DOCS-STRUCTURE.md` for the
+> live navigation.
+
 # New Docs Structure — Page Tracker
 
 Pages to migrate/create. Share markdown by number when ready.

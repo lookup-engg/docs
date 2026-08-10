@@ -7,19 +7,17 @@ description: "Answers to the most common questions about Velo."
 
 <AccordionGroup>
   <Accordion title="What is Velo and what does it do?">
-    Velo is an AI-powered video messaging platform for teams. You record a guided narration of your product, workflow, or idea once, and Velo transforms it into a polished, share-ready video message featuring your AI avatar — without you needing to turn on a camera or nail a perfect take.
-
-    If you've got something to show, just Velo it.
+    Velo is the video layer for work — AI video infrastructure that helps people and companies explain, train, and sell faster. You narrate your product, workflow, or idea once. Velo traces the explanation back to the source, renders a share-ready video with your VeloTwin presenting, and gives you a single link to distribute and track.
   </Accordion>
 
   <Accordion title="How is Velo different from a screen recorder like Loom?">
-    Traditional screen recorders require you to appear on camera and deliver a flawless take every time. Velo is different — you narrate a quick walkthrough, and Velo's browser agent re-records it cleanly using your AI avatar and voice clone, producing an awesome video every time with no camera anxiety or retakes.
+    A screen recorder captures exactly what happened, retakes and all. Velo works differently: you narrate a walkthrough once, and Velo's browser agent re-records it cleanly using your VeloTwin voice and face. The output is consistent every time, without a second take.
   </Accordion>
 
   <Accordion title="What kinds of content can I create with Velo?">
     Velo works for anyone who needs to communicate visually. Common use cases include:
 
-    - **Sales** - polished video pitches to prospects
+    - **Sales** — video pitches to prospects
     - **Product** - feature walkthroughs and team updates
     - **Support & CS** - onboarding guides and training videos
     - **Marketing** - launch videos and product content
@@ -32,7 +30,7 @@ description: "Answers to the most common questions about Velo."
   </Accordion>
 
   <Accordion title="Can I create a video without turning on my camera?">
-    Yes. Velo builds a hyper-realistic AI avatar from a single photo and a short voice recording. Once your VeloTwin is set up, you never need to appear on camera again for any future video.
+    Yes. Velo builds a VeloTwin — a face clone and a voice clone — from a single photo and a short voice recording. Once it is set up, you do not need to appear on camera again for any future Velo.
   </Accordion>
 
   <Accordion title="Is it transparent to use an AI avatar in videos?">
@@ -44,7 +42,11 @@ description: "Answers to the most common questions about Velo."
   </Accordion>
 
   <Accordion title="Does Velo support languages other than English?">
-    Not yet. Velo currently supports English only.
+    Yes. Any video can be translated into another language with translated audio, without re-recording. Open the video and select **Translate** in the preview panel. See [Multilingual output](/editing-velo/translations) for the language list and the full flow.
+  </Accordion>
+
+  <Accordion title="What is Prompt to Video?">
+    Prompt to Video creates a video from a text description instead of a recording, upload, or link — you describe what needs explaining, and an agent researches, scripts, voices, and renders the video for you. See [What is Prompt to Video](/prompt-to-video/overview).
   </Accordion>
 </AccordionGroup>
 
@@ -68,15 +70,15 @@ description: "Answers to the most common questions about Velo."
   <Accordion title="What are roles in a workspace?">
     Every workspace member has one of three roles:
 
-    - **Member** — can create videos, create libraries, publish to libraries, and share externally
-    - **Admin** — everything a Member can do, plus invite and manage members, and configure the brand kit
-    - **Owner** — full control including plans, billing, and the ability to delete the workspace
+    - **Member** — can create videos, publish to libraries, and share externally
+    - **Admin** — everything a Member can do, plus invite and manage members, create libraries, and configure the brand kit
+    - **Owner** — full control including plans, billing, SSO, and the ability to delete the workspace
 
     The person who creates the workspace is automatically the Owner.
   </Accordion>
 
   <Accordion title="How many people can I add to a workspace?">
-    It depends on your plan. Free includes 3 seats, Pro includes 5, and Ultra includes 20. If you need more, upgrade to a higher plan.
+    It depends on your plan. The **Members** page shows your current count — for example "18/20 Seats Available" on Ultra — and has a **Contact us** link if you need more. See [Pricing](/pricing/pricing) for what each plan includes.
   </Accordion>
 
   <Accordion title="How do shared minutes work?">
@@ -84,7 +86,7 @@ description: "Answers to the most common questions about Velo."
   </Accordion>
 
   <Accordion title="What happens when the workspace runs out of minutes?">
-    Video creation is blocked for all workspace members until the cycle resets. On the Free plan, you can also [top up minutes](/settings/plans-billing) to resume immediately.
+    Video creation is blocked for all workspace members until the cycle resets. You can [top up minutes](/settings/plans-billing) on any paid plan to resume immediately.
   </Accordion>
 
   <Accordion title="What are libraries?">
@@ -92,7 +94,11 @@ description: "Answers to the most common questions about Velo."
   </Accordion>
 
   <Accordion title="What is the Brand Kit?">
-    The Brand Kit lets you set a default logo, and brand color for your workspace. Once configured, your branding is automatically applied to every new video — no manual setup needed per video.
+    The Brand Kit lets you set a default logo, brand color, and CTA button for your workspace. Once configured, your branding is automatically applied to every new video — no manual setup needed per video.
+  </Accordion>
+
+  <Accordion title="Does Velo support SSO / SAML?">
+    Yes. SSO and SAML 2.0 are supported via WorkOS on the Ultra plan. The workspace Owner can configure SSO from workspace settings. Common providers like Google, Microsoft, and Okta are supported.
   </Accordion>
 
   <Accordion title="Can teammates see my chat threads?">
@@ -110,12 +116,12 @@ description: "Answers to the most common questions about Velo."
 
     - A desktop computer
     - Google Chrome
-    - The Velo Chrome extension installed
-    - A working microphone (for VeloTwin setup and narrating recordings)
+    - The Velo Chrome extension — only for screen recordings and link walkthroughs. Uploading a file or starting from a prompt needs nothing installed.
+    - A working microphone, for VeloTwin setup and for narrating a recording
   </Accordion>
 
   <Accordion title="Does Velo work on mobile?">
-    You need a desktop to record and create videos. Once a video is published, your Velo link is fully responsive and looks great on any phone or tablet.
+    You need a desktop to record and create videos. Once a video is published, your video link is fully responsive and looks great on any phone or tablet.
   </Accordion>
 
   <Accordion title="How do I install the Velo Chrome extension?">
@@ -127,7 +133,7 @@ description: "Answers to the most common questions about Velo."
   </Accordion>
 
   <Accordion title="What is a VeloTwin?">
-    A VeloTwin is your personal AI avatar — it looks like you and sounds like you. It is built from a single photo and a short voice recording. Once created, your VeloTwin is saved to your account and can present any future Velo video instantly without you ever re-recording yourself.
+    A VeloTwin is your AI presenter — a **face clone** and a **voice clone**, built from a single photo and a short voice recording. In the app they are set up separately, under **Face clone** and **Voice clone**, and combined when you add a VeloTwin to a video. Once created, it can present any future Velo without you re-recording yourself.
   </Accordion>
 
   <Accordion title="How do I create my VeloTwin?">
@@ -135,7 +141,7 @@ description: "Answers to the most common questions about Velo."
   </Accordion>
 
   <Accordion title="Is setting up a VeloTwin a one-time process?">
-    Yes. You set it up once and it is instantly available for every future Velo video you create.
+    Yes. You set it up once, and it is available for every video you create after that.
   </Accordion>
 
   <Accordion title="Will my VeloTwin sound like me, including my accent?">
@@ -156,20 +162,21 @@ description: "Answers to the most common questions about Velo."
 ## Recording & Script
 
 <AccordionGroup>
-  <Accordion title="What are the ways to create a Velo?">
-    There are four creation methods:
+  <Accordion title="What are the ways to create a video?">
+    There are five creation methods:
 
-    - **Capture screen recording** - Record your screen live using the Chrome extension as you walk through your product.
-    - **Upload a recording** - Upload an existing raw video file (MP4 and other formats). Velo writes a new script from scratch and syncs everything into a polished video.
-    - **Upload PDFs and PNGs** - Import a static slide deck or images as the visual base for your video.
+    - **Start with a screen recording** - Record your screen live using the Chrome extension as you walk through your product.
+    - **Upload a recording** - Upload an existing video file (MP4 or MOV). Velo writes a new script from scratch and syncs everything into the finished video.
+    - **Upload a PDF** - Import a document or slide deck as the visual base for your video.
     - **Paste a link** - Provide a URL and Velo's browser agent visits the live page directly.
+    - **Start with a prompt** - Describe the video you need and Velo researches, scripts, voices and renders it with no source material at all.
   </Accordion>
 
   <Accordion title="Can I upload an existing video file to Velo?">
-    Yes. You can upload an existing raw screen recording to Velo. Velo will write a new script from scratch, sync your AI avatar to it, and deliver a polished, share-ready video - without you needing to re-record anything.
+    Yes. You can upload an existing raw screen recording to Velo. Velo writes a new script from scratch, syncs your VeloTwin to it, and delivers a share-ready video — without you re-recording anything.
   </Accordion>
 
-  <Accordion title="Can I create a Velo from a PDF or slide deck?">
+  <Accordion title="Can I create a video from a PDF or slide deck?">
     Yes. Velo supports PDFs and image-based slide decks as the visual foundation for your video. This is ideal for quarterly business reviews, pitch decks, and internal training guides.
   </Accordion>
 
@@ -186,15 +193,11 @@ description: "Answers to the most common questions about Velo."
   </Accordion>
 
   <Accordion title="Can I edit the script before the video is generated?">
-    After recording, Velo generates a script. For Paste a Link and Upload a PDF flows, this appears as Scene Cards in the chat before the video is built. For Capture Screen and Upload a Recording flows, you review and edit the script in the editor after the video is generated.
-  </Accordion>
-
-  <Accordion title="Is there a limit to how much I can change the script?">
-    You can remove as much text as you like. However, you can only add up to 20% more words than the original script. Adding significantly more words affects the browser agent's timing and video quality. If you need to add substantially more content, it is best to redo the assisted recording.
+    Yes. Velo writes the script and shows it in the chat, where you can review and change it before or after the video generates. See [Review and edit your script](/creating-a-velo/script-review).
   </Accordion>
 
   <Accordion title="What is a Scene Card?">
-    Scene Cards appear in the Paste a Link and Upload a PDF flows only — not in Capture Screen or Upload a Recording.
+    A scene card is one segment of a script — a timestamp range, a **VISUAL** describing what appears on screen, and the **NARRATION** to be spoken. Velo shows scene cards when it is building the visuals itself, from a link, a PDF, or a prompt. When the source is a recording, the script is shown as narration lines against timestamps instead. See [Review and edit your script](/creating-a-velo/script-review).
   </Accordion>
 
   <Accordion title="What if my microphone wasn't working during recording?">
@@ -212,7 +215,7 @@ description: "Answers to the most common questions about Velo."
 
 <AccordionGroup>
   <Accordion title="Can I edit my Velo after it has been generated?">
-    Yes. Click Open full editor in the Quick Actions bar to open the Velo editor, where you can make edits.
+    Yes. Click Open full editor in the Quick Actions bar to open the video editor, where you can make edits.
   </Accordion>
 
   <Accordion title="What can I customise in the editor?">
@@ -220,16 +223,16 @@ description: "Answers to the most common questions about Velo."
 
     - **Background** - wallpaper, gradient, solid colour, or custom image; plus blur, padding, rounded corners, border/inset, and shadow
     - **Avatar** - position, size, shape, and zoom behaviour
-    - **Cursor** - style, size, click effects, and sounds
+    - **Cursor** - style, size, idle hiding, click sound and rotation. Only on videos made from a pasted link, where Velo draws the cursor itself
     - **Audio** - background music, narration volume, and master volume
     - **Zoom** - auto zoom (follows cursor) or manual zoom (locked to a region)
-    - **Effects** - Callout, Spotlight, and Mask overlays
+    - **Effects** - Callout and Spotlight overlays, with Mask and Zoom under Focus in the same Insert panel
     - **Cards** - intro card with your name, role, and video description
     - **Logo** - placement, size, and positioning
     - **Scripts** - view and edit your narration transcript
   </Accordion>
 
-  <Accordion title="Can I add my company logo to a Velo?">
+  <Accordion title="Can I add my company logo to a video?">
     Yes. Toggle the **Logo** switch in the editor to overlay your logo on the video. Use the positioning grid to snap it to any corner, and the Logo Size slider to scale it up or down. If you've set up a [Brand Kit](/workspaces/brand-kit), your workspace logo is applied automatically.
   </Accordion>
 
@@ -274,24 +277,39 @@ description: "Answers to the most common questions about Velo."
 
 ---
 
+## Analytics
+
+<AccordionGroup>
+  <Accordion title="Can I see who watched my Velo?">
+    Yes. Every video has built-in analytics covering views, unique viewers, total watch time, and reactions, plus a per-viewer breakdown once people start watching. Open **My Videos** and select **Analytics** on any video card. See [Video analytics](/creating-a-velo/video-analytics).
+  </Accordion>
+</AccordionGroup>
+
+---
+
 ## Pricing
 
 <AccordionGroup>
   <Accordion title="How much does Velo cost?">
-    Velo has three plans:
+    Velo has four plans:
 
-    - **Free** - \$0/month. Includes 15 Velo minutes per month, 3 seats, full editor access, and 1 video with avatar per month. Downloads are watermarked by default (watermark can be removed for \$9.99).
-    - **Pro** - \$49/month. Includes 60 Velo minutes per month, 5 seats, up to 3 minutes of avatar video per month, access to all public avatars, no watermarks on downloads, 3 script retries per video, 3 voice regenerations per video, and 5 link-to-video conversions per month.
-    - **Ultra** - \$200/month. Includes 600 Velo minutes per month, 20 seats, up to 30 minutes of avatar video per month, your own custom VeloTwins, 10 script retries per video, 10 voice regenerations per video, unlimited link-to-video, and SSO/SAML support.
+    - **Free** - \$0/month. 15 Velo minutes and 500 Prompt to Video credits per month, 3 seats, 1 voice clone, 1 avatar video per month. Downloads are watermarked by default.
+    - **Pro** - \$49/month. 60 Velo minutes and 2,000 Prompt to Video credits per month, 5 seats, 3 voice clones, no watermarks, multilingual output, video analytics, 3 script retries and 3 voice regenerations per video, 5 link-to-video conversions per month.
+    - **Ultra** - \$200/month (\$167/month billed yearly). 600 Velo minutes and 8,000 credits per month, 20 seats, unlimited voice clones, 30 minutes of avatar video, custom VeloTwins, shared workspace, Brand Kit, unlimited link-to-video, 10 script retries and 10 voice regenerations per video.
+    - **Enterprise** - custom. Everything in Ultra plus SSO and SAML, SCIM, RBAC, content governance, data residency, SCORM export, API and SDK.
 
     See the [Pricing](/pricing/pricing) page for full details.
   </Accordion>
 
   <Accordion title="What are Velo Minutes?">
-    Velo Minutes are the unit of usage on Velo. Each plan includes a monthly allowance that is shared across all workspace members. Minutes are consumed based on the length of the recordings and videos you generate.
+    Velo Minutes are the unit of usage for recording-based videos. Each plan includes a monthly allowance that is shared across all workspace members. Minutes are consumed based on the length of the recordings and videos you generate.
+  </Accordion>
+
+  <Accordion title="The app says 'Reach credits' — is that the same as Prompt to Video credits?">
+    Yes. [Prompt to Video](/prompt-to-video/overview) is billed in credits from a pool separate from Velo minutes, and some screens in the app label that pool **Reach credits**. It is the same pool described in [Billing & credits](/prompt-to-video/billing-credits).
   </Accordion>
 
   <Accordion title="Is there a free plan?">
-    Yes. The Free plan gives you 15 Velo minutes per month, 3 seats, full editor access, and 1 video with avatar per month - no credit card required.
+    Yes. The Free plan gives you 15 Velo minutes and 500 Prompt to Video credits per month, 3 seats, 1 voice clone, and 1 avatar video per month — no credit card required.
   </Accordion>
 </AccordionGroup>

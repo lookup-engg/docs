@@ -1,4 +1,5 @@
 {
+  "_ARCHIVED": "ARCHIVED \u2014 this is NOT the live Mintlify config. The live config is /docs.json at the repo root. This file is retained for reference only and still references pre-rebrand brand assets (#0044FF, Frame17.svg). Do not edit navigation here.",
   "$schema": "https://mintlify.com/docs.json",
   "theme": "maple",
   "name": "Velo Documentation",
