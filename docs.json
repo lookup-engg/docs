@@ -22,7 +22,7 @@
         ]
       },
       {
-        "group": "Creating a Velo",
+        "group": "Creating a Video",
         "pages": [
           "creating-a-velo/overview",
           {
@@ -243,7 +243,7 @@
     },
     {
       "source": "/script-generation/:slug*",
-      "destination": "/ai-script/how-the-ai-works"
+      "destination": "/creating-a-velo/script-review"
     },
     {
       "source": "/sharing-velo/:slug*",
@@ -299,7 +299,7 @@
     },
     {
       "source": "/ai-script/flow-a/script-syncing",
-      "destination": "/ai-script/flow-a/editing-your-script"
+      "destination": "/creating-a-velo/script-review"
     },
     {
       "source": "/chrome-extension/update-extension",

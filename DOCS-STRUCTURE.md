@@ -11,30 +11,40 @@ Pages listed in `.mintignore` are excluded from the build and are not in this tr
 - `getting-started/the-chat-home.mdx`
 - `getting-started/quickstart.mdx`
 
-## Creating a Velo
+## Creating a Video
 
 - `creating-a-velo/overview.mdx`
-- **Screen recording**
-  - `creating-a-velo/capture-screen.mdx`
-  - `ai-script/flow-a/review-your-script.mdx`
-  - `ai-script/flow-a/editing-your-script.mdx`
-- **Upload a video or PDF**
-  - `creating-a-velo/upload-recording.mdx`
-  - `creating-a-velo/write-a-prompt.mdx`
-  - `creating-a-velo/record-my-intent.mdx`
-  - `ai-script/flow-b/scene-card.mdx`
-  - `ai-script/flow-b/review.mdx`
-  - `ai-script/flow-b/editing.mdx`
-- **Paste a link**
-  - `creating-a-velo/paste-a-link.mdx`
-  - `assisted-recording/how-it-works.mdx`
-  - `assisted-recording/best-practices.mdx`
-  - `assisted-recording/common-issues.mdx`
-- **Write a prompt**
+**[Start with Prompt]**
+
   - `prompt-to-video/overview.mdx`
   - `prompt-to-video/prompt-to-video-vs-velo.mdx`
   - `prompt-to-video/creating-a-video.mdx`
   - `prompt-to-video/editing.mdx`
+
+**[Screen recording]**
+
+  - `creating-a-velo/capture-screen.mdx`
+
+**[Upload a recording]**
+
+  - `creating-a-velo/upload-recording.mdx`
+
+**[Upload a PDF]**
+
+  - `creating-a-velo/write-a-prompt.mdx`
+  - `creating-a-velo/record-my-intent.mdx`
+
+**[Paste a link]**
+
+  - `creating-a-velo/paste-a-link.mdx`
+
+**[Recording your intent]**
+
+  - `assisted-recording/how-it-works.mdx`
+  - `assisted-recording/best-practices.mdx`
+  - `assisted-recording/common-issues.mdx`
+
+- `creating-a-velo/script-review.mdx`
 - `creating-a-velo/quick-actions.mdx`
 
 ## Connectors
@@ -63,12 +73,15 @@ Pages listed in `.mintignore` are excluded from the build and are not in this tr
 - `editing-velo/cut-and-crop.mdx`
 - `editing-velo/translations.mdx`
 
+## Video to doc
+
+- `docs/generating-a-doc.mdx`
+- `docs/editing-and-sharing.mdx`
+
 ## Share & analyse
 
 - `creating-a-velo/sharing.mdx`
 - `creating-a-velo/video-analytics.mdx`
-- `docs/generating-a-doc.mdx`
-- `docs/editing-and-sharing.mdx`
 
 ## VeloTwin
 
@@ -110,4 +123,4 @@ Pages listed in `.mintignore` are excluded from the build and are not in this tr
 
 ---
 
-**66 pages** across 11 groups.
+**62 pages across 12 top-level groups.**
