@@ -199,3 +199,44 @@ pre {
 [class*="frame"] img {
   border: 1px solid var(--velo-rule-soft);
 }
+
+/* ---------------------------------------------------------------------------
+   Page-header controls — "Copy page" and its dropdown.
+
+   Squaring the controls removed the visual separation between the two, and the
+   chevron sat as a solid blue block with poor contrast against the white
+   button beside it. Separate them and make the icon legible.
+   --------------------------------------------------------------------------- */
+
+/* Put air between the button and the caret rather than letting them touch. */
+#page-context-menu,
+[id*="page-context"],
+[class*="page-context"] {
+  gap: 6px !important;
+}
+
+/* Whatever wraps the pair: space the children instead of butting them up. */
+main header [class*="flex"] > button + button,
+[class*="copy-page"] + button,
+button + button[aria-haspopup] {
+  margin-left: 6px !important;
+}
+
+/* The caret should read as a control, not a filled blue tile. Outline it and
+   give the chevron enough contrast to be seen. */
+button[aria-haspopup="menu"],
+button[aria-expanded][class*="bg-primary"] {
+  background-color: #FFFFFF !important;
+  border: 1px solid var(--velo-rule) !important;
+  color: #1F2937 !important;
+}
+button[aria-haspopup="menu"] svg,
+button[aria-expanded][class*="bg-primary"] svg {
+  color: #1F2937 !important;
+  stroke: #1F2937 !important;
+  opacity: 1 !important;
+}
+button[aria-haspopup="menu"]:hover,
+button[aria-expanded][class*="bg-primary"]:hover {
+  background-color: #F3F5FA !important;
+}

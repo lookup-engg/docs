@@ -8,7 +8,7 @@ Requirements (run once):
   python3 -m playwright install chromium
 
 Usage:
-  python3 docs/take-screenshots.py
+  python3 scripts/take-screenshots.py
 
 How it works:
   1. Opens a browser — you log in to app.usevelo.ai once
@@ -23,7 +23,7 @@ import time
 from pathlib import Path
 from playwright.sync_api import sync_playwright, Page
 
-DOCS_IMAGES  = Path(__file__).parent / "images"
+DOCS_IMAGES  = Path(__file__).resolve().parent.parent / "images"   # repo root, not scripts/
 BASE_URL     = "https://app.usevelo.ai"
 VELOTWIN_URL = f"{BASE_URL}/velo-twin"
 
@@ -330,7 +330,7 @@ def run():
 
 
         if should_run("chrome"):
-         print("\n── Chrome Extension ─────────────────────────────────────")
+            print("\n── Chrome Extension ─────────────────────────────────────")
         if should_run("chrome") and EXTENSION_PATH:
             page.goto("https://chromewebstore.google.com/detail/velo-companion/gmjgnlhlmipflnfehmchoeeajoegamif",
                       wait_until="networkidle")
@@ -368,7 +368,11 @@ def run():
             prompt("Show the extension pinned + signed in after reinstall")
             snap(page, "chrome-extension/reinstall/3.png")
 
-            # capture-screen — left last because stopping recording closes the tab
+        elif should_run("chrome"):
+            print("  ⚠  Chrome Extension skipped — re-run with an extension path\n")
+
+        # capture-screen — left last because stopping recording closes the tab
+        if should_run("capture-screen") and EXTENSION_PATH:
             print("\n── Capture Screen (left last — handles tab closing) ────")
             go(page, f"{BASE_URL}/make-a-velo")
             prompt("[capture-screen] Step 1/4 — Click 'Capture Screen Recording' — recording modal open (name + REC button)")
@@ -381,8 +385,8 @@ def run():
             prompt("[capture-screen] Step 4/4 — Editor open with Scripts panel visible")
             page = active_page()
             snap(page, "getting-started/capture-screen/4.png")
-        else:
-            print("  ⚠  Skipped — run with extension path to capture these\n")
+        elif should_run("capture-screen"):
+            print("  ⚠  Capture Screen skipped — re-run with an extension path\n")
 
         print("\n✅  All done! Screenshots saved to docs/images/")
         ctx.close()

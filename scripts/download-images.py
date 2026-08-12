@@ -5,7 +5,7 @@ Scans all .mdx files in this docs repo, downloads S3 images locally,
 and replaces S3 URLs with local paths.
 
 Run from the docs folder:
-    python3 download-images.py
+    python3 scripts/download-images.py
 """
 
 import os
@@ -14,15 +14,21 @@ import urllib.request
 import urllib.error
 from pathlib import Path
 
-DOCS_ROOT = Path(__file__).parent
+DOCS_ROOT = Path(__file__).resolve().parent.parent   # repo root, not scripts/
 S3_PATTERN = re.compile(
     r'https://(?:dev-)?velo-screen-recordings\.s3\.amazonaws\.com/annotated/(\d+)/scene_(\d+)/([a-f0-9]+)\.png[^\s"\'<>]*'
 )
 
-def local_path_for(mdx_path: Path, scene_num: str) -> Path:
-    """Returns the local image path for a given MDX file and scene number."""
+def local_path_for(mdx_path: Path, scene_num: str, file_hash: str = "", disambiguate: bool = False) -> Path:
+    """Local image path for a given MDX file and scene number.
+
+    A page can reference two different images that share a scene number but
+    differ by record id or hash. When that happens the caller sets
+    disambiguate=True and the hash is appended so neither destination
+    overwrites the other."""
     rel = mdx_path.relative_to(DOCS_ROOT).with_suffix('')  # e.g. creating-a-velo/upload-recording
-    return DOCS_ROOT / "images" / rel / f"scene-{scene_num}.png"
+    name = f"scene-{scene_num}-{file_hash[:8]}.png" if disambiguate else f"scene-{scene_num}.png"
+    return DOCS_ROOT / "images" / rel / name
 
 def download_image(url: str, dest: Path) -> bool:
     if dest.exists():
@@ -49,6 +55,11 @@ def process_mdx(mdx_path: Path):
     print(f"\n📄 {mdx_path.relative_to(DOCS_ROOT)} ({len(matches)} image(s))")
     new_content = content
 
+    # Scene numbers are only unique per page if no two images share one.
+    hashes_per_scene = {}
+    for (_rid, scene_num, file_hash) in matches:
+        hashes_per_scene.setdefault(scene_num, set()).add(file_hash)
+
     for (record_id, scene_num, file_hash) in matches:
         # Reconstruct the full URL (with query string) from the original content
         full_url_pattern = re.compile(
@@ -59,7 +70,8 @@ def process_mdx(mdx_path: Path):
             continue
         full_url = full_url_match.group(0)
 
-        dest = local_path_for(mdx_path, scene_num)
+        dest = local_path_for(mdx_path, scene_num, file_hash,
+                              disambiguate=len(hashes_per_scene[scene_num]) > 1)
         local_ref = '/' + str(dest.relative_to(DOCS_ROOT)).replace('\\', '/')
 
         if download_image(full_url, dest):
