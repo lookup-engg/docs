@@ -188,15 +188,25 @@ button[class*="primary"] {
   color: #FFFFFF !important;
 }
 
+/* The mint theme marks the current sidebar page with a bg-primary tint, which
+   the rule above would turn into a solid blue block. Keep it a light tint with
+   blue text, so the current page reads as a selection, not a button. */
+#navigation-items a[class*="bg-primary"] {
+  background-color: rgba(72, 127, 233, 0.10) !important;
+  color: #487FE9 !important;
+}
+
 /* Code blocks: square-ish, hairline framed, no drop shadow. */
 pre {
   border: 1px solid var(--velo-rule);
   box-shadow: none !important;
 }
 
-/* Frames and images sit inside a hairline, the way figures do on the site. */
+/* Frames and images sit inside a hairline, the way figures do on the site.
+   The :not() keeps the mint theme's header (class "is-not-frame") out of this,
+   otherwise the logo gets framed too. */
 .prose img,
-[class*="frame"] img {
+[class*="frame"]:not([class*="not-frame"]) img {
   border: 1px solid var(--velo-rule-soft);
 }
 
@@ -213,6 +223,13 @@ pre {
 [id*="page-context"],
 [class*="page-context"] {
   gap: 6px !important;
+}
+
+/* The mint theme draws Copy page as the left half of a split button, with no
+   right border of its own. With the caret spaced apart, give it one back. */
+#page-context-menu-button {
+  border-right-width: 1px !important;
+  border-right-style: solid !important;
 }
 
 /* Whatever wraps the pair: space the children instead of butting them up. */
@@ -239,4 +256,34 @@ button[aria-expanded][class*="bg-primary"] svg {
 button[aria-haspopup="menu"]:hover,
 button[aria-expanded][class*="bg-primary"]:hover {
   background-color: #F3F5FA !important;
+}
+
+/* "On this page" links are plain #anchor jumps, so the browser snaps straight
+   to the section. Glide instead, unless the reader has asked for less motion. */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* "On this page": the mint theme starts the list flush under its heading, so
+   the heading reads as part of the list. Give it room to act as a label. */
+#table-of-contents-content {
+  margin-top: 12px !important;
+}
+
+/* Changelog tab: no sidebar. The tab holds a single page, so the sidebar
+   would only show one lone "Changelog" link. On desktop, remove it and start
+   the page on the same left edge as the logo and the tabs, so the date labels
+   form a column under the header. Mobile keeps the theme's own layout. */
+@media (min-width: 1024px) {
+  html[data-current-path="/changelog"] #sidebar {
+    display: none !important;
+  }
+  html[data-current-path="/changelog"] #content-area {
+    margin-left: 0 !important;
+    padding-left: 16px !important;
+    width: 100% !important;
+    max-width: 940px !important;
+  }
 }
