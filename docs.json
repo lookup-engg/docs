@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "maple",
+  "theme": "mint",
   "name": "Velo Documentation",
   "colors": {
     "primary": "#487FE9",
@@ -12,157 +12,168 @@
     "css": "/custom.css"
   },
   "navigation": {
-    "groups": [
+    "tabs": [
       {
-        "group": "Getting Started",
-        "pages": [
-          "getting-started/introduction",
-          "getting-started/the-chat-home",
-          "getting-started/quickstart"
-        ]
-      },
-      {
-        "group": "Creating a Video",
-        "pages": [
-          "creating-a-velo/overview",
+        "tab": "Documentation",
+        "groups": [
           {
-            "group": "Start with Prompt",
+            "group": "Getting Started",
             "pages": [
-              "prompt-to-video/overview",
-              "prompt-to-video/prompt-to-video-vs-velo",
-              "prompt-to-video/creating-a-video",
-              "prompt-to-video/editing"
+              "getting-started/introduction",
+              "getting-started/the-chat-home",
+              "getting-started/quickstart"
             ]
           },
           {
-            "group": "Screen recording",
+            "group": "Creating a Video",
             "pages": [
-              "creating-a-velo/capture-screen"
+              "creating-a-velo/overview",
+              {
+                "group": "Start with Prompt",
+                "pages": [
+                  "prompt-to-video/overview",
+                  "prompt-to-video/prompt-to-video-vs-velo",
+                  "prompt-to-video/creating-a-video",
+                  "prompt-to-video/editing"
+                ]
+              },
+              {
+                "group": "Screen recording",
+                "pages": [
+                  "creating-a-velo/capture-screen"
+                ]
+              },
+              {
+                "group": "Upload a recording",
+                "pages": [
+                  "creating-a-velo/upload-recording"
+                ]
+              },
+              {
+                "group": "Upload a PDF",
+                "pages": [
+                  "creating-a-velo/write-a-prompt",
+                  "creating-a-velo/record-my-intent"
+                ]
+              },
+              {
+                "group": "Paste a link",
+                "pages": [
+                  "creating-a-velo/paste-a-link"
+                ]
+              },
+              {
+                "group": "Recording your intent",
+                "pages": [
+                  "assisted-recording/how-it-works",
+                  "assisted-recording/best-practices",
+                  "assisted-recording/common-issues"
+                ]
+              },
+              "creating-a-velo/script-review",
+              "creating-a-velo/quick-actions"
             ]
           },
           {
-            "group": "Upload a recording",
+            "group": "Connectors",
             "pages": [
-              "creating-a-velo/upload-recording"
+              "prompt-to-video/connectors/overview",
+              "prompt-to-video/connectors/knowledge-bases",
+              "prompt-to-video/connectors/mcp-servers",
+              "prompt-to-video/connectors/applications"
             ]
           },
           {
-            "group": "Upload a PDF",
+            "group": "Editing Velo",
             "pages": [
-              "creating-a-velo/write-a-prompt",
-              "creating-a-velo/record-my-intent"
+              "editing-velo/overview",
+              "editing-velo/output-format",
+              "editing-velo/background",
+              "editing-velo/cursor",
+              "editing-velo/velotwin",
+              "editing-velo/audio",
+              "editing-velo/scripts",
+              "editing-velo/zooms",
+              "editing-velo/masks",
+              "editing-velo/spotlight",
+              "editing-velo/callout",
+              "editing-velo/insert",
+              "editing-velo/cards",
+              "editing-velo/timeline",
+              "editing-velo/cut-and-crop",
+              "editing-velo/translations"
             ]
           },
           {
-            "group": "Paste a link",
+            "group": "Video to doc",
             "pages": [
-              "creating-a-velo/paste-a-link"
+              "docs/generating-a-doc",
+              "docs/editing-and-sharing"
             ]
           },
           {
-            "group": "Recording your intent",
+            "group": "Share & analyse",
             "pages": [
-              "assisted-recording/how-it-works",
-              "assisted-recording/best-practices",
-              "assisted-recording/common-issues"
+              "creating-a-velo/sharing",
+              "creating-a-velo/video-analytics"
             ]
           },
-          "creating-a-velo/script-review",
-          "creating-a-velo/quick-actions"
+          {
+            "group": "VeloTwin",
+            "pages": [
+              "velotwin/voice-clone",
+              "velotwin/face-clone",
+              "velotwin/public-avatars"
+            ]
+          },
+          {
+            "group": "Workspaces",
+            "pages": [
+              "workspaces/overview",
+              "workspaces/create-workspace",
+              "workspaces/invite-members",
+              "workspaces/roles-permissions",
+              "workspaces/libraries",
+              "workspaces/brand-kit"
+            ]
+          },
+          {
+            "group": "Plans & billing",
+            "pages": [
+              "pricing/pricing",
+              "settings/plans-billing",
+              "settings/usage",
+              "prompt-to-video/billing-credits"
+            ]
+          },
+          {
+            "group": "Account",
+            "pages": [
+              "settings/profile",
+              "settings/security"
+            ]
+          },
+          {
+            "group": "Chrome Extension",
+            "pages": [
+              "chrome-extension/installation",
+              "chrome-extension/recording",
+              "chrome-extension/update",
+              "chrome-extension/reinstall"
+            ]
+          },
+          {
+            "group": "FAQ",
+            "pages": [
+              "faq/faq"
+            ]
+          }
         ]
       },
       {
-        "group": "Connectors",
+        "tab": "Changelog",
         "pages": [
-          "prompt-to-video/connectors/overview",
-          "prompt-to-video/connectors/knowledge-bases",
-          "prompt-to-video/connectors/mcp-servers",
-          "prompt-to-video/connectors/applications"
-        ]
-      },
-      {
-        "group": "Editing Velo",
-        "pages": [
-          "editing-velo/overview",
-          "editing-velo/output-format",
-          "editing-velo/background",
-          "editing-velo/cursor",
-          "editing-velo/velotwin",
-          "editing-velo/audio",
-          "editing-velo/scripts",
-          "editing-velo/zooms",
-          "editing-velo/masks",
-          "editing-velo/spotlight",
-          "editing-velo/callout",
-          "editing-velo/insert",
-          "editing-velo/cards",
-          "editing-velo/timeline",
-          "editing-velo/cut-and-crop",
-          "editing-velo/translations"
-        ]
-      },
-      {
-        "group": "Video to doc",
-        "pages": [
-          "docs/generating-a-doc",
-          "docs/editing-and-sharing"
-        ]
-      },
-      {
-        "group": "Share & analyse",
-        "pages": [
-          "creating-a-velo/sharing",
-          "creating-a-velo/video-analytics"
-        ]
-      },
-      {
-        "group": "VeloTwin",
-        "pages": [
-          "velotwin/voice-clone",
-          "velotwin/face-clone",
-          "velotwin/public-avatars"
-        ]
-      },
-      {
-        "group": "Workspaces",
-        "pages": [
-          "workspaces/overview",
-          "workspaces/create-workspace",
-          "workspaces/invite-members",
-          "workspaces/roles-permissions",
-          "workspaces/libraries",
-          "workspaces/brand-kit"
-        ]
-      },
-      {
-        "group": "Plans & billing",
-        "pages": [
-          "pricing/pricing",
-          "settings/plans-billing",
-          "settings/usage",
-          "prompt-to-video/billing-credits"
-        ]
-      },
-      {
-        "group": "Account",
-        "pages": [
-          "settings/profile",
-          "settings/security"
-        ]
-      },
-      {
-        "group": "Chrome Extension",
-        "pages": [
-          "chrome-extension/installation",
-          "chrome-extension/recording",
-          "chrome-extension/update",
-          "chrome-extension/reinstall"
-        ]
-      },
-      {
-        "group": "FAQ",
-        "pages": [
-          "faq/faq"
+          "changelog"
         ]
       }
     ]
@@ -172,10 +183,15 @@
     "dark": "/logo/dark.svg"
   },
   "navbar": {
-    "links": [],
+    "links": [
+      {
+        "label": "Blog",
+        "href": "https://usevelo.ai/blog/"
+      }
+    ],
     "primary": {
       "type": "button",
-      "label": "Go To Velo",
+      "label": "Try Velo for free",
       "href": "https://app.usevelo.ai"
     }
   },
