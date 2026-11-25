@@ -1,0 +1,39 @@
+---
+title: MCP servers
+description: Connect your own MCP server so Velo can use context from internal tools when it writes scripts.
+---
+
+**Plans:** Free, Pro, Ultra · **Uses credits:** No (connecting)
+
+Connect your own MCP server so Velo can use context from your internal tools.
+
+> *Placeholder (gif): Connectors → MCP servers highlighted, Add server, filling Name, Server URL, Transport and Authentication, Continue, then Connect*
+
+## Add an MCP server
+
+1. In the sidebar, select **Connectors**, then **MCP servers**.
+2. Select **Add server**.
+3. Enter a **Name** and the **Server URL**.
+4. Choose the **Transport**: **HTTP** or **SSE**.
+5. Choose the **Authentication**.
+6. Select **Continue**, then **Connect** to sign in.
+
+With **OAuth (sign in)**, Velo finds the sign-in details and registers itself. If your server doesn't support that, expand **Manual OAuth client** and paste a client ID.
+
+## When to use it
+
+Use an MCP server for internal systems with no ready-made app, such as an internal wiki or database. For common tools, check [Applications](/connect/applications) first.
+
+## FAQs
+
+**Is this the same as Velo MCP?**
+
+No. MCP servers let Velo read from your tools. [Velo MCP](/connect/velo-mcp) lets you use Velo inside Claude or ChatGPT.
+
+**Which transports are supported?**
+
+**HTTP** and **SSE**.
+
+**My server doesn't support automatic sign-in. What do I do?**
+
+Expand **Manual OAuth client** and paste your client ID.
