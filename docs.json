@@ -34,8 +34,8 @@
             "pages": [
               "create/index",
               "create/choose-how-to-start",
-              "create/record-your-screen",
               "create/start-from-a-prompt-or-template",
+              "create/record-your-screen",
               "create/record-yourself",
               "create/generate-with-avatar",
               "create/turn-a-pdf-into-a-video",
@@ -57,10 +57,10 @@
               "edit/work-with-the-timeline",
               "edit/add-text-shapes-and-media",
               "edit/zooms-and-highlights",
+              "edit/music-and-audio",
               "edit/canvas-settings",
               "edit/split-and-crop",
-              "edit/version-history",
-              "edit/music-and-audio"
+              "edit/version-history"
             ]
           },
           {
@@ -87,28 +87,6 @@
               "organize/convert-to-a-template",
               "organize/assets",
               "organize/brand-kit"
-            ]
-          },
-          {
-            "group": "Account",
-            "pages": [
-              "settings/profile",
-              "settings/security"
-            ]
-          },
-          {
-            "group": "Chrome Extension",
-            "pages": [
-              "chrome-extension/installation",
-              "chrome-extension/recording",
-              "chrome-extension/update",
-              "chrome-extension/reinstall"
-            ]
-          },
-          {
-            "group": "FAQ",
-            "pages": [
-              "faq/faq"
             ]
           },
           {
@@ -226,131 +204,473 @@
   "redirects": [
     {
       "source": "/capture-screen/:slug*",
-      "destination": "/creating-a-velo/capture-screen"
+      "destination": "/create/record-your-screen",
+      "permanent": true
     },
     {
       "source": "/upload-recording/:slug*",
-      "destination": "/creating-a-velo/upload-recording"
+      "destination": "/create/polish-a-recording",
+      "permanent": true
     },
     {
       "source": "/upload-pdfs-pngs/:slug*",
-      "destination": "/creating-a-velo/write-a-prompt"
+      "destination": "/create/start-from-a-prompt-or-template",
+      "permanent": true
     },
     {
       "source": "/paste-a-link/:slug*",
-      "destination": "/creating-a-velo/paste-a-link"
+      "destination": "/create/turn-a-url-into-a-video",
+      "permanent": true
     },
     {
       "source": "/creating-velotwin/:slug*",
-      "destination": "/velotwin/voice-clone"
+      "destination": "/voices-and-avatars/clone-your-voice",
+      "permanent": true
     },
     {
       "source": "/script-generation/:slug*",
-      "destination": "/creating-a-velo/script-review"
+      "destination": "/create/review-your-script",
+      "permanent": true
     },
     {
       "source": "/sharing-velo/:slug*",
-      "destination": "/creating-a-velo/sharing"
+      "destination": "/share/share-a-link",
+      "permanent": true
     },
     {
       "source": "/sharing-video/:slug*",
-      "destination": "/creating-a-velo/sharing"
+      "destination": "/share/share-a-link",
+      "permanent": true
     },
     {
       "source": "/workspaces/faq/faq",
-      "destination": "/faq/faq"
+      "destination": "/help/fix-a-problem",
+      "permanent": true
     },
     {
       "source": "/workspaces/pricing/pricing",
-      "destination": "/pricing/pricing"
+      "destination": "/plans-and-account/plans-and-pricing",
+      "permanent": true
     },
     {
       "source": "/workspaces/settings/:slug*",
-      "destination": "/settings/profile"
+      "destination": "/plans-and-account/profile-password-and-devices",
+      "permanent": true
     },
     {
       "source": "/workspaces/getting-started/:slug*",
-      "destination": "/getting-started/introduction"
+      "destination": "/get-started/welcome-to-velo",
+      "permanent": true
     },
     {
       "source": "/workspaces/creating-a-velo/sharing",
-      "destination": "/creating-a-velo/sharing"
+      "destination": "/share/share-a-link",
+      "permanent": true
     },
     {
       "source": "/getting-started/capture-screen",
-      "destination": "/creating-a-velo/capture-screen"
+      "destination": "/create/record-your-screen",
+      "permanent": true
     },
     {
       "source": "/getting-started/upload-recording",
-      "destination": "/creating-a-velo/upload-recording"
+      "destination": "/create/polish-a-recording",
+      "permanent": true
     },
     {
       "source": "/getting-started/upload-pdfs-pngs",
-      "destination": "/creating-a-velo/write-a-prompt"
+      "destination": "/create/start-from-a-prompt-or-template",
+      "permanent": true
     },
     {
       "source": "/getting-started/paste-a-link",
-      "destination": "/creating-a-velo/paste-a-link"
+      "destination": "/create/turn-a-url-into-a-video",
+      "permanent": true
     },
     {
       "source": "/assisted-recording/steps-to-record",
-      "destination": "/assisted-recording/how-it-works"
+      "destination": "/create/record-your-screen",
+      "permanent": true
     },
     {
       "source": "/assisted-recording/recording-options",
-      "destination": "/assisted-recording/how-it-works"
+      "destination": "/create/record-your-screen",
+      "permanent": true
     },
     {
       "source": "/ai-script/flow-a/script-syncing",
-      "destination": "/creating-a-velo/script-review"
+      "destination": "/create/review-your-script",
+      "permanent": true
     },
     {
       "source": "/chrome-extension/update-extension",
-      "destination": "/chrome-extension/update"
+      "destination": "/create/velo-companion-extension",
+      "permanent": true
     },
     {
       "source": "/chrome-extension/reinstall-extension",
-      "destination": "/chrome-extension/reinstall"
+      "destination": "/create/velo-companion-extension",
+      "permanent": true
     },
     {
       "source": "/editing-velo/audio-settings",
-      "destination": "/editing-velo/audio"
+      "destination": "/edit/music-and-audio",
+      "permanent": true
     },
     {
       "source": "/editing-velo/background-and-screen",
-      "destination": "/editing-velo/background"
+      "destination": "/edit/canvas-settings",
+      "permanent": true
     },
     {
       "source": "/editing-velo/camera",
-      "destination": "/editing-velo/velotwin"
+      "destination": "/voices-and-avatars/clone-your-voice",
+      "permanent": true
     },
     {
       "source": "/editing-velo/video-settings",
-      "destination": "/editing-velo/overview"
+      "destination": "/edit/editor-tour",
+      "permanent": true
     },
     {
       "source": "/ai-script/how-the-ai-works",
-      "destination": "/creating-a-velo/overview"
+      "destination": "/create/choose-how-to-start",
+      "permanent": true
     },
     {
       "source": "/ai-script/flow-a/review-your-script",
-      "destination": "/creating-a-velo/script-review"
+      "destination": "/create/review-your-script",
+      "permanent": true
     },
     {
       "source": "/ai-script/flow-a/editing-your-script",
-      "destination": "/creating-a-velo/script-review"
+      "destination": "/create/review-your-script",
+      "permanent": true
     },
     {
       "source": "/ai-script/flow-b/scene-card",
-      "destination": "/creating-a-velo/script-review"
+      "destination": "/create/review-your-script",
+      "permanent": true
     },
     {
       "source": "/ai-script/flow-b/review",
-      "destination": "/creating-a-velo/script-review"
+      "destination": "/create/review-your-script",
+      "permanent": true
     },
     {
       "source": "/ai-script/flow-b/editing",
-      "destination": "/creating-a-velo/script-review"
+      "destination": "/create/review-your-script",
+      "permanent": true
+    },
+    {
+      "source": "/getting-started/introduction",
+      "destination": "/get-started/welcome-to-velo",
+      "permanent": true
+    },
+    {
+      "source": "/docs/editing-and-sharing",
+      "destination": "/get-started/welcome-to-velo",
+      "permanent": true
+    },
+    {
+      "source": "/docs/generating-a-doc",
+      "destination": "/get-started/welcome-to-velo",
+      "permanent": true
+    },
+    {
+      "source": "/getting-started/the-chat-home",
+      "destination": "/get-started/tour-the-home-screen",
+      "permanent": true
+    },
+    {
+      "source": "/workspaces/create-workspace",
+      "destination": "/get-started/set-up-your-workspace",
+      "permanent": true
+    },
+    {
+      "source": "/prompt-to-video/overview",
+      "destination": "/get-started/how-the-velo-agent-works",
+      "permanent": true
+    },
+    {
+      "source": "/prompt-to-video/prompt-to-video-vs-velo",
+      "destination": "/get-started/how-the-velo-agent-works",
+      "permanent": true
+    },
+    {
+      "source": "/getting-started/quickstart",
+      "destination": "/get-started/make-your-first-video",
+      "permanent": true
+    },
+    {
+      "source": "/prompt-to-video/creating-a-video",
+      "destination": "/get-started/make-your-first-video",
+      "permanent": true
+    },
+    {
+      "source": "/creating-a-velo/overview",
+      "destination": "/create/choose-how-to-start",
+      "permanent": true
+    },
+    {
+      "source": "/creating-a-velo/write-a-prompt",
+      "destination": "/create/start-from-a-prompt-or-template",
+      "permanent": true
+    },
+    {
+      "source": "/creating-a-velo/capture-screen",
+      "destination": "/create/record-your-screen",
+      "permanent": true
+    },
+    {
+      "source": "/creating-a-velo/record-my-intent",
+      "destination": "/create/record-your-screen",
+      "permanent": true
+    },
+    {
+      "source": "/assisted-recording/how-it-works",
+      "destination": "/create/record-your-screen",
+      "permanent": true
+    },
+    {
+      "source": "/assisted-recording/best-practices",
+      "destination": "/create/record-your-screen",
+      "permanent": true
+    },
+    {
+      "source": "/chrome-extension/recording",
+      "destination": "/create/record-your-screen",
+      "permanent": true
+    },
+    {
+      "source": "/creating-a-velo/upload-recording",
+      "destination": "/create/polish-a-recording",
+      "permanent": true
+    },
+    {
+      "source": "/creating-a-velo/paste-a-link",
+      "destination": "/create/turn-a-url-into-a-video",
+      "permanent": true
+    },
+    {
+      "source": "/creating-a-velo/script-review",
+      "destination": "/create/review-your-script",
+      "permanent": true
+    },
+    {
+      "source": "/editing-velo/scripts",
+      "destination": "/create/review-your-script",
+      "permanent": true
+    },
+    {
+      "source": "/chrome-extension/installation",
+      "destination": "/create/velo-companion-extension",
+      "permanent": true
+    },
+    {
+      "source": "/chrome-extension/reinstall",
+      "destination": "/create/velo-companion-extension",
+      "permanent": true
+    },
+    {
+      "source": "/chrome-extension/update",
+      "destination": "/create/velo-companion-extension",
+      "permanent": true
+    },
+    {
+      "source": "/editing-velo/overview",
+      "destination": "/edit/editor-tour",
+      "permanent": true
+    },
+    {
+      "source": "/editing-velo/translations",
+      "destination": "/edit/editor-tour",
+      "permanent": true
+    },
+    {
+      "source": "/prompt-to-video/editing",
+      "destination": "/edit/edit-by-chat-and-comments",
+      "permanent": true
+    },
+    {
+      "source": "/creating-a-velo/quick-actions",
+      "destination": "/edit/quick-actions",
+      "permanent": true
+    },
+    {
+      "source": "/editing-velo/timeline",
+      "destination": "/edit/work-with-the-timeline",
+      "permanent": true
+    },
+    {
+      "source": "/editing-velo/insert",
+      "destination": "/edit/add-text-shapes-and-media",
+      "permanent": true
+    },
+    {
+      "source": "/editing-velo/cards",
+      "destination": "/edit/add-text-shapes-and-media",
+      "permanent": true
+    },
+    {
+      "source": "/editing-velo/zooms",
+      "destination": "/edit/zooms-and-highlights",
+      "permanent": true
+    },
+    {
+      "source": "/editing-velo/spotlight",
+      "destination": "/edit/zooms-and-highlights",
+      "permanent": true
+    },
+    {
+      "source": "/editing-velo/masks",
+      "destination": "/edit/zooms-and-highlights",
+      "permanent": true
+    },
+    {
+      "source": "/editing-velo/callout",
+      "destination": "/edit/zooms-and-highlights",
+      "permanent": true
+    },
+    {
+      "source": "/editing-velo/cursor",
+      "destination": "/edit/zooms-and-highlights",
+      "permanent": true
+    },
+    {
+      "source": "/editing-velo/audio",
+      "destination": "/edit/music-and-audio",
+      "permanent": true
+    },
+    {
+      "source": "/editing-velo/background",
+      "destination": "/edit/canvas-settings",
+      "permanent": true
+    },
+    {
+      "source": "/editing-velo/output-format",
+      "destination": "/edit/canvas-settings",
+      "permanent": true
+    },
+    {
+      "source": "/editing-velo/cut-and-crop",
+      "destination": "/edit/split-and-crop",
+      "permanent": true
+    },
+    {
+      "source": "/creating-a-velo/sharing",
+      "destination": "/share/share-a-link",
+      "permanent": true
+    },
+    {
+      "source": "/creating-a-velo/video-analytics",
+      "destination": "/share/track-views",
+      "permanent": true
+    },
+    {
+      "source": "/workspaces/libraries",
+      "destination": "/organize/libraries",
+      "permanent": true
+    },
+    {
+      "source": "/workspaces/brand-kit",
+      "destination": "/organize/brand-kit",
+      "permanent": true
+    },
+    {
+      "source": "/velotwin/public-avatars",
+      "destination": "/voices-and-avatars/public-voices-and-avatars",
+      "permanent": true
+    },
+    {
+      "source": "/velotwin/voice-clone",
+      "destination": "/voices-and-avatars/clone-your-voice",
+      "permanent": true
+    },
+    {
+      "source": "/editing-velo/velotwin",
+      "destination": "/voices-and-avatars/clone-your-voice",
+      "permanent": true
+    },
+    {
+      "source": "/velotwin/face-clone",
+      "destination": "/voices-and-avatars/clone-your-face",
+      "permanent": true
+    },
+    {
+      "source": "/prompt-to-video/connectors/overview",
+      "destination": "/connect/connectors-overview",
+      "permanent": true
+    },
+    {
+      "source": "/prompt-to-video/connectors/knowledge-bases",
+      "destination": "/connect/knowledge-bases",
+      "permanent": true
+    },
+    {
+      "source": "/prompt-to-video/connectors/mcp-servers",
+      "destination": "/connect/mcp-servers",
+      "permanent": true
+    },
+    {
+      "source": "/prompt-to-video/connectors/applications",
+      "destination": "/connect/applications",
+      "permanent": true
+    },
+    {
+      "source": "/pricing/pricing",
+      "destination": "/plans-and-account/plans-and-pricing",
+      "permanent": true
+    },
+    {
+      "source": "/prompt-to-video/billing-credits",
+      "destination": "/plans-and-account/plans-and-pricing",
+      "permanent": true
+    },
+    {
+      "source": "/settings/plans-billing",
+      "destination": "/plans-and-account/top-ups-invoices-and-payment",
+      "permanent": true
+    },
+    {
+      "source": "/settings/usage",
+      "destination": "/plans-and-account/when-you-run-out-of-credits",
+      "permanent": true
+    },
+    {
+      "source": "/workspaces/overview",
+      "destination": "/plans-and-account/workspace-members-and-roles",
+      "permanent": true
+    },
+    {
+      "source": "/workspaces/invite-members",
+      "destination": "/plans-and-account/workspace-members-and-roles",
+      "permanent": true
+    },
+    {
+      "source": "/workspaces/roles-permissions",
+      "destination": "/plans-and-account/workspace-members-and-roles",
+      "permanent": true
+    },
+    {
+      "source": "/settings/profile",
+      "destination": "/plans-and-account/profile-password-and-devices",
+      "permanent": true
+    },
+    {
+      "source": "/settings/security",
+      "destination": "/plans-and-account/profile-password-and-devices",
+      "permanent": true
+    },
+    {
+      "source": "/faq/faq",
+      "destination": "/help/fix-a-problem",
+      "permanent": true
+    },
+    {
+      "source": "/assisted-recording/common-issues",
+      "destination": "/help/fix-a-problem",
+      "permanent": true
     }
   ]
 }
