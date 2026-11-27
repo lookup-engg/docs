@@ -176,7 +176,18 @@
     "socials": {
       "x": "https://x.com/sharewithvelo",
       "linkedin": "https://www.linkedin.com/company/useveloai"
-    }
+    },
+    "links": [
+      {
+        "header": "Support",
+        "items": [
+          {
+            "label": "Email support",
+            "href": "mailto:support@usevelo.ai"
+          }
+        ]
+      }
+    ]
   },
   "background": {
     "color": {
